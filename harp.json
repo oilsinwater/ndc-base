@@ -1,0 +1,14 @@
+{
+  "globals": {
+    "sites": {
+      "library": "https://lib.undersco.re",
+      "audio": "https://pod.undersco.re",
+      "video": "https://tv.undersco.re"
+    },
+    "description": "A research organisation that recognises all infrastructure as expressions of power, and sees interfaces and technologies as social, economic, political and ecological accelerants.",
+    "contact": "mailto:hello@newdesigncongress.org",
+    "title": "The New Design Congress",
+    "author": "The New Design Congress",
+    "discord": "https://discord.gg/KuVmEfQg4q"
+  }
+}

@@ -1,0 +1,41 @@
+- var lang = current.path[0]? current.path[0] : 'en'
+- var people = public._data.people
+- var contrib = {}
+ 
+extends ./_utl_layout.jade
+
+block sideContent
+  p.cs-meta.ma-sml(style="font-variant-ligatures: none;") A fiscally sponsored project of Simply Secure, a US 501(c)3 nonprofit.
+  p.cs-meta.ma-sml 276 Fifth Ave Suite 704-33
+    br
+    | New York NY 10001
+    br
+    | United States
+
+  p.cs-meta #[span.fw-hev Email: ] #[a(href="mailto:hello@newdesigncongress.org") hello@newdesigncongress]
+  p.cs-meta.ma-sml #[a(href="./team") Team, Collaborators and Acknowledgements]
+  p.cs-meta.ma-reg #[a(href="./privacy") Privacy Policy]
+
+block mainContent
+  article.lyt-txt.cs-txt
+    p.ma-sml Founded on 1 January 2020, The New Design Congress is an independent research and strategy organisation based in Berlin, Germany. We see all infrastructure as power and technologies as societal accelerants. We develop unique understandings of the relationships between societies and their technologies.
+    
+    p.ma-sml Amid increasing global inequities, instabilities, and uncertainties, the New Design Congress confronts our unsettled future by using #[em #[strong alternative forking]] to expose the gap between society’s flawed understanding of what #[em appears to be happening] in today’s digital systems and what is #[em actually happening]. Our central theory of change - alternative forking - takes problems of the #[em present], finds underexplored #[em historical] and #[em contemporary] alternatives, and develops #[em real-world, applicable] forks. To achieve this, we combine a decade of institutional understanding of digital security, systems theory, and strategic thinking with a participatory and international congress of collaborators drawn from diverse regions, cultures, and subcultures.
+
+    p.ma-sml Technology’s past must be reevaluated in order for better futures to become reality. Despite the promise inherent in digital systems, these tools now work as #[em accelerants] – exacerbating social, political, and environmental disasters around the globe. Far too many present and well-intentioned interventions fail because they are developed from systems of privilege and rely on the flawed building blocks of digital societies – #[em #[strong identity]], #[em #[strong connectivity]], #[em #[strong ownership]], and #[em #[strong scale]]. Yet these constructs are fundamentally at odds with most people’s everyday experiences and needs. The opportunities for intervention are similarly disassociated and exclusive, reserved only for members of academia, industry, and media. As a result, those who are in a position to intervene do so with flawed fundamentals, and those who could effect true change are excluded from mobilisation. Until these underlying principles are recognised and addressed, society risks an endless cycle of faulty interventions incapable of altering trajectories in which a digitally driven dystopian future becomes fait accompli. Only through alternative forking can this wheel be broken.
+
+    p.ma-sml The New Design Congress works with universities, internet subcultures, at-risk communities, companies, non-profits, environmentalists, policymakers, and technologies to produce ambitious alternative forks: #[em #[strong new paradigms for digital integrity, identity, intervention, and economic self-sovereignty]]. Together, we will platform underrepresented critical ideals, develop prototypes and products, find the future in unexpected places, and publish open research to forge applicable, practical, and realistic alternatives. All results will provide tangible answers to complex technologically-driven problems and be made available so that others can adapt them to their own localised manifestations of problem solving.
+
+
+    .ma-reg.consulting
+      .core.ma-reg
+        p.ma-sml We are supported by or have worked with: 
+        ul
+          each partner in orgPartners
+            li.ma-reg
+              a(href="#{ partner.url }" target="_blank"): img(src='/assets/logos/#{ partner.logo }_logo.png' alt="#{ partner.name }")
+
+    a(href="mailto:hello@newdesigncongress.org") 
+      .contact-button.ff-sans.fw-hev
+        include ../assets/s/contact.svg
+        | Work With Us 

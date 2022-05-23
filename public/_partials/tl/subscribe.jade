@@ -1,0 +1,10 @@
+- let labels = public[lang]._data.labels
+- let strings = public[lang]._data.strings
+- let cable = public[lang].timeline._data.cables.NDCAB0009
+a(href="#{ cable.link }" target="_blank").lyt-cell.lyt-cell-cable
+  .lyt-cell-content
+    .lyt-cell-container.icon.cable
+      .section: label #{ labels.latestcable }
+      .meta
+        .title: h4 #{ cable.title }
+        .tagline: p.ext #{ cable.description }

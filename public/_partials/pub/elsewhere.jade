@@ -1,0 +1,10 @@
+- var labels = public[lang]._data.labels
+- var navHeight = index? '0' : '44px';
+
+section#ui-pub-elsewhere(style="height: #{ navHeight }")
+  ul
+    li
+      a.ui-item(href="/#{ lang }/") 
+        include ../../assets/s/back.svg
+        .actions
+          span #{ labels.back }

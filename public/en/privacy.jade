@@ -1,0 +1,157 @@
+- var lang = current.path[0]? current.path[0] : 'en'
+- var people = public._data.people
+- var contrib = {}
+ 
+extends ./_utl_layout.jade
+
+block sideContent
+  p.cs-meta.ma-reg #[span.fw-hev Last updated: ] 11 October 2021
+  
+
+block mainContent
+  article.lyt-txt.cs-txt
+    p.ma-sml #[span.fw-hev The New Design Congress] is a fiscally sponsored project of Simply Secure, a registered 501(c)3 nonprofit organization based in the United States of America. Simply Secure's Employee Identification Number (EIN) is available upon request to contact@simplysecure.org. 
+    p Our official address is:
+    p.ma-sml The New Design Congress
+      br
+      | c/o Simply Secure
+      br
+      | 276 Fifth Ave Suite 704-33
+      br
+      | New York, NY 10001
+
+    p #[span.fw-hev Email:] contact@simplysecure.org
+    p.ma-reg #[span.fw-hev Website:] simplysecure.org
+
+    p.ma-sml We adhere to the highest ethical standards in all of our operations. We are dedicated to protecting the privacy of everyone who interacts with us. We don’t sell, barter, give away, rent, or permit anyone outside of The New Design Congress, our fiscal sponsor, and project-scoped contractors to use or access information about our partners, collaborators, research participants, or website visitors.
+
+    p.ma-sml Where possible, we administer our own infrastructure to ensure that our data stays within our control. We sometimes use third party services to publish work and keep in touch with people, and understand the privacy implications of this. We have an active focus to do both of these things better through the development of our infrastructure project, #[a(href="https://undersco.re").ext Underscore], and by regular critical review of our infrastructure partners. Here you can find out what these services are and how we handle all sorts of data, from user research to job applications.
+
+    p.ma-sml If there is additional information you would like to see in this document about our practices, or if you have other comments or questions, please email us at #[a(href="mailto:hello@newdesigncongrss.org") hello@newdesigncongress.org].
+
+
+    h3 Our Sites and Services
+    p.ma-sml We use the following services to run our websites and understand how people are using them:
+
+    h4 Web Hosting
+    p.ma-sml We host our websites in Europe on infrastructure we control. We maintain basic server access logs for reasons of security.
+
+    h4 CDN and DDOS Protection 
+    p.ma-sml Caching and DDOS protection for our web projects is provided by #[a(href="https://deflect.ca" target="_blank").ext eQualitie Deflect]. #[a(href="https://equalit.ie/" target="_blank").ext eQualitie] is a Canadian company developing open and reusable systems with a focus on privacy, online security and freedom of association. We use Deflect to analyse traffic, detect threats and proactively defend our sites. Deflect is governed by eQualitie's #[a(href="https://equalit.ie/values/" target="_blank").ext values statement] and the Deflect #[a(href="https://deflect.ca/tos/" target="_blank").ext Terms of Service] and #[a(href="https://deflect.ca/privacy-notice/" target="_blank").ext Privacy Notice].  
+
+    h4 Website Analytics
+    p.ma-sml We use simple, privacy-friendly self hosted analytics provided via Underscore, a coop of which we are a founding member. Our analytics responds to #[a(href="https://www.eff.org/issues/do-not-track" target="_blank").ext Do Not Track] requests. Our protection service (Deflect) maintains their own analytics service that we do not use. Our traffic data is not monetised.
+
+    h4 New Design Cables Newsletter
+    p.ma-sml Our newsletter and associated mailing list is handled via Substack. As per Substack's services, we informally track aggregated open rates for each Cable. We only send our newsletter to people who expressly sign up for it. You can read Substack's privacy policy #[a(href="https://substack.com/privacy" target="_blank").ext here].
+
+    h4 Video and Audio Content
+    p.ma-sml We self-host video content via #[a(href="https://tv.undersco.re").ext Underscore TV] - #[a(href="https://joinpeertube.org/" target="_blank").ext Peertube] instance. Peertube is a federated video platform.
+
+    p.ma-sml Peertube offers simple built-in analytics (such as view-counts, etc) for each video uploaded to the service. We use these analytics in reporting to funders or collaborators and other instances in which we seek to measure our impact. Peertube also offers an opt-out feature in which viewers can help distribute a video's playback load, which sometimes exposes an individual's IP address to others who are viewing our content at the same time. This is on by default.
+
+    p.ma-sml Where appropriate, we selectively mirror our content via our YouTube account and do so in accordance with YouTube's #[a(href="https://www.youtube.com/howyoutubeworks/policies/community-guidelines/" target="_blank").ext Community Guidelines].
+
+    p.ma-sml Podcasts and other audio content is distributed via RSS and we use a non-federated #[a(href="https://funkwhale.audio").ext Funkwhale] instance to manage and distribute our audio content. Outside of general traffic information, we do not collect additional user data from this service.  
+    
+    h4 Data Storage
+    p.ma-sml Our work is stored on an end-to-end encrypted #[a(href="https://nextcloud.com" target="_blank").ext Nextcloud] instance. In cases where we interact with #[a(href="https://simplysecure.org" target="_blank").ext Simply Secure] (our fiscal sponsor) or other external parties, we use Google Workspace for Nonprofits, and this is subject to #[a(href="https://policies.google.com/terms?hl=en" target="_blank").ext Google’s terms]. 
+
+    p.ma-sml We use #[a(href="https://notion.so" target="_blank").ext Notion] for project planning. The use of all services is governed by an internal data security policy and collaborations are evaluated individually against our policies. In this way, we are subject to Notion’s #[a(href="https://notion.notion.site/Terms-and-Privacy-28ffdd083dc3473e9c2da6ec011b58ac" target="_blank").ext privacy policy].
+    
+    p.ma-sml Our team uses PGP and are happy to correspond via encrypted email, or honor requests to have files shared with us be not stored in services we do not completely control. We respect diverse threat models and work to accommodate our partners’ needs and concerns.
+
+    p.ma-sml All data stored locally is encrypted as per our internal data security policy. 
+
+    h3 Community
+    h4 Subscriptions and Donations
+    p.ma-sml We accept subscriptions via OpenCollective and Substack. New Design Congress subscriptions are processed via Stripe, and are subject to standard financial regulations depending on your juristiction. When subscribing or donating via OpenCollective, your support will be listed on the New Design Congress OpenCollective page, and acknowledged on this website. When making an anonymous donation or subscription, your personal details are not shared with us, but they are still subject to external additional terms. In all cases, your financial information is never transmitted to or stored by us. For more information, please refer to OpenCollective’s #[a(href="https://opencollective.com/privacypolicy" target="_blank").ext Privacy Policy] and Stripe’s #[a(href="https://stripe.com/en-gb-de" target="_blank").ext Global Privacy Policy].
+
+    h4 Collaboration
+    p.ma-sml We use Discord for community and collaboration efforts. Please refer to Discord’s #[a(href="https://discord.com/privacy" target="_blank").ext privacy policy] for more information. When collaborating with our fiscal sponsor or partners, we use Slack as required. Slack stores your account information and usage data, and our administrators have access to all public channels. Please refer to Slack’s #[a(href="https://slack.com/privacy-policy" target="_blank").ext privacy policy].
+
+    h4 Streaming & Events
+    p.ma-sml We maintain a schedule of events, many public facing, via #[a(href="https://events.undersco.re") Underscore Events], an unfederated instance of the #[a(href="https://mobilizon.org/en/" target="_blank") Mobilizon project]. We collect event RSVPs for the purposes of logistics and understanding the impact of our events. Attendee and event participant information is used solely to ensure event integrity and safety.
+    
+    p.ma-sml We host livestreamed events in circumstances where in-person events have a significant environmental impact and/or as directed by public health advice. Our online events are streamed via Underscore infrastructure, which we control. In some circumstances, we may simulcast a live event on Twitch. In these cases, the policies of Twitch and Amazon are relevant, and can be understood via the Twitch #[a(href="https://www.twitch.tv/p/legal/privacy-notice/" target="_blank").ext privacy notice].
+
+    p.ma-sml We securely archive all New Design Congress events. Before publishing an archived event, we require written consent from all participants.
+
+    h4 Social Media
+    p.ma-sml The New Design Congress maintains a presence on popular social media platforms (Twitter, LinkedIn, etc), as well as alternatives (such as #[a(href="https://joinmastodon.org/" target="_blank").ext Mastodon] and #[a(href="https://scuttlebutt.nz/" target="_blank").ext Secure Scuttlebutt]). Many of these networks have their own individual policies or technical differences. We take all reasonable steps to ensure participant consent when sharing content that includes external participants. 
+    
+    h4 Consent
+    p.ma-sml You can withdraw your consent from any of our published material at any time by emailing #[a(href="mailto:hello@newdesigncongress.org") hello@newdesigncongress.org].
+
+    h3 Collaborating With Us
+    p.ma-sml The New Design Congress collaborates with individuals, organisations and companies across a range of research streams. In many cases, our collaborations involve sensitive information supplied to us via our consulting partner. We maintain strict confidentiality and secure data storage for all materials.
+
+    p.ma-sml We maintain a transparency policy for our consultations and list active and former consultancies on our site. We are not able to work with organisations that cannot accommodate this policy. 
+
+    h4 Research Participants
+    p.ma-sml Research is an important part of our work: it helps us understand people’s needs and helps us develop our perspectives with a greater degree of nuance.
+    
+    h4 Consent
+    p.ma-sml All research participants are given a consent form that outlines what the research involves, what information will be recorded and how it will be used. If the participant is happy to proceed we ask them to sign the form to confirm this. We scan signed consent forms and shred paper copies, then store consent forms on Google Drive and keep these for 3 years.
+
+    p.ma-sml At the moment, we do not conduct any research with people under the age of 18.
+
+    p.ma-sml Our participant Bill of Rights is aligned with our fiscal sponsor. You can view an example of Simply Secure’s participant Bill of Rights #[a(href="https://github.com/simplysecure/resources/blob/master/research_tools/participant_bill_of_rights.pdf" target="_blank").ext on GitHub].
+
+    h4 Using Information for Research
+    p.ma-sml Research material is separated from any identifiable information, such as consent forms, while we are working with it.
+
+    p.ma-sml Any notes we gather during research sessions are stored securely. Any digital files (like audio, photos and videos) are stored on end-to-end encrypted infrastructure. In cases where we interact with our fiscal sponsor or select partners, this data may be stored on Google Drive. In any case, all data is only accessed by The New Design Congress researchers. At the end of the project, all notes and digital files are securely archived or, in more sensitive cases, destroyed and deleted.
+
+    p.ma-sml Sometimes we may publish quotes from research sessions. We only do this if we have specific consent from the participant and any personally identifiable information has been removed. We will only publish audio, photos and video from a research session if a participant has given consent and has signed a model release form.
+    
+    h3 Working at The New Design Congress
+    p.ma-sml Only team members involved in the recruitment process have access to applications, CVs and emails we receive. We don’t collect any #[a(href="https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/lawful-basis-for-processing/special-category-data/" target="_blank").ext special category data] or ask for any background checks as part of the application process.
+
+    p.ma-sml When people join The New Design Congress, we request information about them needed for tax purposes. We hold information about their role and their professional development. Access to this information is controlled.
+
+    p.ma-sml Personal data shared during an application process may be shared with our fiscal sponsor as required by our sponsorship agreement.
+
+    p.ma-sml We maintain a roster of contact information for individuals and organisations to work with as required. We collect this on a voluntary basic via our #[a(href="./jobs#roll-call") roll call available here]. With consent, we store basic contact details and links to portfolios in encrypted infrastructure. This can be destroyed at any time upon request.
+
+    h3 Data Policy Overview
+    p.ma-sml The New Design Congress doesn’t participate in the following data processing activities:
+
+    ul.ma-sml
+      li Buying or selling marketing lists
+      li Entering into data sharing agreements with other organisations
+      li Telephone marketing
+      li Postal marketing
+      li CCTV surveillance
+
+    p.ma-sml We don’t use “soft opt-in”, meaning you won’t receive any marketing communication from us unless you’ve specifically agreed to it.
+    
+    h4 Data Protection
+    p.ma-sml We carefully choose our services and tools at The New Design Congress. It’s important that they follow good security practices, like HTTPS, two-factor authentication and the ability to set a strong password. We’ve reviewed the privacy policies and security practices of everything we use.
+
+    p.ma-sml When a new team member joins The New Design Congress, we explain best practices for keeping their devices secure, maintaining the security of their online accounts, and working outside our offices.
+
+    p.ma-sml In the event of a data breach, we are required to notify the Information Commissioner’s Office. We will do so following #[a(href="https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/personal-data-breaches/" target="_blank").ext their guidance].
+
+    p.ma-sml Every quarter, we review our documentation of the data we handle and third party services we use. This helps us continuously improve our processes and hold ourselves to account. We will update this document as necessary.
+
+    h4 Transfer Outside the EEA
+    p.ma-sml We have reviewed the privacy policies of third party services we use. They provide adequate protections when information is shared outside of the European Economic Area.
+
+    h4 Exemptions
+    p.ma-sml There are exemptions to data protection regulations that may require us to share data about you, including requests by law enforcement. This includes requirements and orders in the United States, where our fiscal sponsor is based. A full list of EU exemptions are listed on the #[a(href="https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/exemptions/" target="_blank").ext ICO website]. This also applies to data held about you by third party services we use.
+    
+    h4 GDPR
+    p.ma-sml The General Data Protection Regulation gives EU citizens the following rights:
+
+    ul.ma-sml
+      li #[a(href="https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/individual-rights/right-to-be-informed/" target="_blank").ext Right to be informed]
+      li #[a(href="https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/individual-rights/right-of-access/" target="_blank").ext Right of access]
+      li #[a(href="https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/individual-rights/right-to-rectification/" target="_blank").ext Right to rectification]
+      li #[a(href="https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/individual-rights/right-to-erasure/" target="_blank").ext Right to erasure]
+      li #[a(href="https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/individual-rights/right-to-restrict-processing/" target="_blank").ext Right to restrict processing]
+      li #[a(href="https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/individual-rights/right-to-data-portability/" target="_blank").ext Right to data portability]
+      li #[a(href="https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/individual-rights/right-to-object/" target="_blank").ext Right to object]
+      li #[a(href="https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/individual-rights/rights-related-to-automated-decision-making-including-profiling/" target="_blank").ext Rights related to automated decision-making, including profiling]
+
+    p.ma-sml To exercise any of these rights, please contact us at #[a(href="mailto:hello@newdesigncongress.org") hello@newdesigncongress.org]. You can find information specific to the services we use or our activities in the relevant sections of this document. If you are located in the EU and aren’t satisfied by our response, you can contact the #[a(href="https://ico.org.uk/concerns/" target="_blank").ext EU Information Commissioner’s Office].

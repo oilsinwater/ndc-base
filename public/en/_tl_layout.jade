@@ -1,0 +1,20 @@
+- var lang = current.path[0]? current.path[0] : 'en'
+- var pub = current.path.length > 2 && current.path[1] === 'pub'? current.path[current.path.length-1] : ''
+- var loc = current.path.length === 2 ? 'index' : 'content'
+- var slug = current.path[current.path.length - 1];
+
+
+doctype html
+html(lang='#{ lang }')
+  if (lang !== 'index')
+    != partial("../_partials/meta/head", { lang: lang })
+
+  body.cs-reg
+    != partial("../_partials/pub/nav", { type: 'index', lang: lang })
+    
+    main#lyt-tl.ds-grid(class="lyt-#{ loc } page-#{ slug }")
+      != partial('../_partials/uiSwitch/index', { label: { l: 'highlights', r: 'timeline' }})
+
+      != partial('../_partials/tl', { lang: lang })
+        section#ui-content
+          != yield

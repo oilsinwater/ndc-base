@@ -1,0 +1,19 @@
+nav#ui-pub
+  .nav
+    input(type="checkbox")#menuSwitch
+    label(for="menuSwitch")
+      span.menu 
+        include ../../assets/s/menu.svg
+      .x 
+        include ../../assets/s/X.svg
+    != partial('../nav/nav-full.jade')
+      
+
+    != partial('utils', { lang: lang, type: type })
+
+    if (type === 'pub')
+      != partial('essays', { lang: lang })
+      
+    if (type !== 'index')
+      != partial('elsewhere', { index: false, lang: lang })
+      

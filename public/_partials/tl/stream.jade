@@ -1,0 +1,63 @@
+- let stream = public._data.timeline.stream
+- let labels = public[lang]._data.labels
+
+- function determinePriority() {
+  - const now = new Date()
+  - if (stream.live) return "lyt-grs0 lyt-gcs0 lyt-gr2 lyt-gc2"
+  - else if(compareDates(now, stream.schedule[0].date) === 'pre') return "lyt-grs0 lyt-gcs2"
+  - else return "lyt-gcs2 lyt-grs3 no-signal"
+- }
+
+- function compareDates(now, next) {
+  - const start = new Date(next.start)
+  - const end = new Date(next.end)
+  - start.setDate(start.getDate() - 5)
+  - end.setDate(end.getDate() + 5)
+  - if (start < now && now <= new Date(next.start)) return 'pre'
+  - else if(end > now && now >= new Date(next.end)) return 'post'
+- }
+
+a(href="#{ stream.schedule[0].event.url }" target="_blank" class="#{ determinePriority() }").lyt-cell.lyt-cell-stream
+  .lyt-cell-content(class="#{ stream.live ? 'live' : '' }")
+    .lyt-cell-container.icon.stream(class="#{ stream.live ? 'live' : 'shib-zzz' }")
+      if (!stream.live)
+        .status: label #{ labels.offline } // #{ labels.upnext }
+        .meta
+          .event: h4 #{ stream.schedule[0].title } 
+          .time: #timer #{ stream.schedule[0].date.start }
+          .tagline.dc-case: p.ext #{ labels.details }
+        script.
+          streamStart="#{ stream.schedule[0].date.start }"
+          function countdownTimer() {
+            const difference = +new Date(streamStart) - +new Date();
+            let remaining = "Now!";
+
+            if (difference > 0) {
+              const parts = {
+                d: Math.floor(difference / (1000 * 60 * 60 * 24)),
+                h: Math.floor((difference / (1000 * 60 * 60)) % 24),
+                m: Math.floor((difference / 1000 / 60) % 60),
+                s: Math.floor((difference / 1000) % 60)
+              };
+
+              remaining = Object.keys(parts)
+                .map(part => {
+                  if (!parts[part]) return;
+                  return `${parts[part]}${part}`;
+                })
+                .join(" ");
+            }
+
+            document.getElementById("timer").innerHTML = remaining;
+          }
+
+          countdownTimer();
+          setInterval(countdownTimer, 1000);
+      if (stream.live)
+        .status
+          span #{ labels.livestream } // 
+          span #[span.blink ◉ &nbsp; ] #{ labels.live }
+        .box
+          .event: h4 #{ stream.schedule[0].title}
+          .action: a(href="#{ stream.schedule[0].url }") #{ labels.watchstream } &nbsp; ▶
+        video(autoplay muted disablePictureInPicture loop playsinline src='/assets/test.mp4' style="opacity:0.5") 

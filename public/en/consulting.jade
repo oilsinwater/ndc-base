@@ -1,0 +1,17 @@
+- var lang = current.path[0]? current.path[0] : 'en'
+- var people = public._data.people
+- var contrib = {}
+ 
+extends ./_utl_layout.jade
+
+block sideContent
+  p.cs-meta.ma-sml(style="font-variant-ligatures: none;") A fiscally sponsored project of Simply Secure, a US 501(c)3 nonprofit.
+  p.cs-meta.ma-sml c/o Origin.Berlin 
+    br 
+    | Mittelweg 50/F4, 
+    br 
+    | 12053 Berlin, Germany
+
+block mainContent
+  article.lyt-txt.cs-txt
+    p.ma-sml #[em All infrastructure is an #[strong expression of power].]

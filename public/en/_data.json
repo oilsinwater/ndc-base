@@ -1,0 +1,315 @@
+{
+  "titles": {
+    "pub": "A New Design Congress Essay",
+    "research": "Work by The New Design Congress",
+    "about": "About The New Design Congress",
+    "jobs": "Open Positions at The New Design Congress",
+    "consulting": "Consulting services with The New Design Congress",
+    "privacy": "The New Design Congress Privacy Policy",
+    "team": "The New Design Congress - Team & Collaborators"
+  },
+  "mast": {
+    "date": "date",
+    "text": "text",
+    "translate": "translation",
+    "publisher": "publisher"
+  },
+  "actions": {
+    "info": [
+      "about us",
+      "research",
+      "consulting",
+      "publications"
+    ],
+  "subscribe": "subscribe",
+    "download": "download",
+    "listen": "listen",
+    "support": "support our work",
+    "contact": "contact us"
+  },
+  "footer": {
+    "copyright": "Original content © 2021, The New Design Congress.",
+    "links": [
+      [
+        "index",
+        "/en/"
+      ],
+      [
+        "what we do",
+        "/en/about"
+      ],
+      [
+        "team",
+        "/en/team"
+      ],
+      [
+        "discord",
+        "https://discord.gg/Xu9D3qVana"
+      ],
+      [
+        "expertise network",
+        "https://cloud.undersco.re/apps/forms/tRKmKkpXNSQj5Jd2"
+      ],
+      [
+        "privacy",
+        "/en/privacy"
+      ],
+      [
+        "contact",
+        "mailto:hello@newdesigncongress.org"
+      ],
+      [
+        "support our work",
+        "https://opencollective.com/newdesigncongress"
+      ]
+    ]
+  },
+  "footer_nav": {
+    "copyright": "Original content © 2021, The New Design Congress.",
+    "links": [
+      [
+        "index",
+        "/en/"
+      ],
+      [
+        "what we do",
+        "/en/about"
+      ],
+      [
+        "team",
+        "/en/team"
+      ],
+      [
+        "discord",
+        "https://discord.gg/Xu9D3qVana"
+      ],
+      [
+        "expertise network",
+        "https://cloud.undersco.re/apps/forms/tRKmKkpXNSQj5Jd2"
+      ],
+      [
+        "privacy",
+        "/en/privacy"
+      ],
+      [
+        "contact",
+        "mailto:hello@newdesigncongress.org"
+      ],
+      [
+        "support our work",
+        "https://opencollective.com/newdesigncongress"
+      ]
+    ]
+  },
+  "supportFooter": {
+    "title": "Support The New Design Congress",
+    "intro": "We are a small, independent research organisation that sees all digital infrastructure as expressions of power. Support more work like this.",
+    "links": [
+      {
+        "title": "Subscribe or make a donation",
+        "url": "https://opencollective.com/newdesigncongress"
+      },
+      {
+        "title": "Join the Newsletter",
+        "url": "https://ndc.substack.com"
+      }
+    ]
+  },
+  "consultingFooter": {
+    "title": "Work with us",
+    "intro": "We are a small, independent research organisation that sees all digital infrastructure as expressions of power. Our research and consultancies unearth hidden social and political dynamics in digital infrastructure and products.",
+    "links": [
+      {
+        "title": "Schedule a Call",
+        "url": "mailto:hello@newdesigncongress.org"
+      },
+      {
+        "title": "Join the Newsletter",
+        "url": "https://ndc.substack.com"
+      }
+    ]
+  },
+  "strings": {
+    "intro": [
+      "A research organisation that recognises all infrastructure as expressions of power, and sees interfaces and technologies as social, economic, political and ecological accelerants."
+    ],
+    "supportcall": "Donate or subscribe from $5 a month and get early access to our work and ongoing research.",
+    "unfilter": "Nothing found. Enable a filter to explore the Index."
+  },
+  "labels": {
+    "all": "all",
+    "timeline": "index",
+    "essay": "essay",
+    "essays": "essays",
+    "research": "research",
+    "stream": "stream",
+    "streams": "streams",
+    "software": "software",
+    "cable": "cable",
+    "cables": "cables",
+    "work": "work",
+    "community": "interaction",
+    "dates": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
+    "upcoming": "planned",
+    "upnext": "up next",
+    "offline": "stream offline",
+    "replay": "replay",
+    "nosignal": "nosignal",
+    "live": "live now",
+    "calendar": "add reminder",
+    "details": "stream details",
+    "latestcable": "newsletter",
+    "livestream": "live stream",
+    "watchstream": "watch stream",
+    "supportus": "support our work",
+    "read": "read…",
+    "contact": "contact",
+    "back": "back",
+    "newrelease": "new work",
+    "exhibition": "exhibition",
+    "newresearch": "new research",
+    "published": "published",
+    "author": "author",
+    "authors": "authors",
+    "client": "for",
+    "clients": "for",
+    "anewdesigncongressconsultancy": "a new design congress research project",
+    "focus": "focus"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": [
+      "The New Design Congress"
+    ],
+    "description": "A research organisation that recognises all infrastructure as expressions of power, and sees interfaces and technologies as social, economic, political and ecological accelerants.",
+    "keywords": [
+      "meta",
+      "about",
+      "new design congress"
+    ],
+    "supporters": {
+      "label": "Supporters"
+    },
+    "headers": {
+      "research": "Research",
+      "consulting": "Consulting",
+      "publications": "Publications"
+    },
+    "partners": {
+      "label": "Partners",
+      "fiscalSponsor": "Fiscal Sponsor",
+      "strategicPartner": "Collaborators",
+      "eventsPartner": "Events Partners"
+    },
+    "orgPartners": [
+      {
+        "name": "Simply Secure",
+        "url": "https://simplysecure.org/",
+        "type": "Fiscal Sponsor",
+        "location": "USA",
+        "logo": "simplysecure"
+      },
+      {
+        "name": "Public Office",
+        "url": "https://public-office.info",
+        "type": "Research Supporter",
+        "location": "AU",
+        "logo": "po"
+      },
+      {
+        "name": "Components",
+        "url": "https://components.one/",
+        "type": "Client",
+        "location": "US",
+        "logo": "components"
+      },      
+      {
+        "name": "Aspiration Tech",
+        "url": "https://aspirationtech.org/",
+        "type": "Strategic Partner",
+        "location": "USA",
+        "logo": "aspirationtech"
+      },
+      {
+        "name": "Filantropia",
+        "url": "https://filantropia.com.au/",
+        "type": "Strategic Partner",
+        "location": "AU",
+        "logo": "filantropia"
+      },
+      {
+        "name": "Furtherfield",
+        "url": "https://furtherfield.org/",
+        "type": "Strategic Sponsor",
+        "location": "UK",
+        "logo": "furtherfield"
+      },
+      {
+        "name": "Reclaim Futures",
+        "url": "https://reclaimfutures.org/",
+        "type": "Event Partner",
+        "location": "CH",
+        "logo": "reclaimfutures"
+      },
+      {
+        "name": "Common Knowledge",
+        "url": "https://commonknowledge.coop/",
+        "type": "Strategic Partner",
+        "location": "UK",
+        "logo": "commonknowledge"
+      }
+    ]
+  },
+  "index": {
+    "layout": "_tl_layout",
+    "description": "A research organisation that recognises all infrastructure as expressions of power, and sees interfaces and technologies as social, economic, political and ecological accelerants."
+  },
+  "jobs": {
+    "title": "Vacancies",
+    "description": "View open positions, internships and voluntary positions at The New Design Congress."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "description": "Read the New Design Congress privacy policy."
+  },
+  "team": {
+    "title": "Team and Collaborators",
+    "descritpion": "",
+    "team": {
+      "label": "Team",
+      "collab": "Collaborators & Acknowledgements",
+      "members": [
+        "cade-diehm",
+        "ellis-jones",
+        "benjamin-royer",
+        "rose-regina-lawrence",
+        "georgia-bullen"
+      ],
+      "credits": [
+        "edward-anthony",
+        "ngoc-trieu",
+        "ignatius-gilfedder",
+        "claire-peters",
+        "karissa-mckelvey",
+        "wei-huang"
+      ]
+    }
+  },
+  "sustainability": {
+    "title": "Sustainability Policy",
+    "description": "We are in the midst of a climate disaster and this reality is not lost on us. Informed by our own broader research, our climate and sustainability policies are part of a rapidly evolving and actionable living document."
+  }
+}

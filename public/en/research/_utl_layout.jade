@@ -1,0 +1,57 @@
+- var lang = current.path[0] ? current.path[0] : 'en'
+- var pub = current.path.length > 2 && current.path[1] === 'pub'? current.path[current.path.length-1] : ''
+- var slug = current.path[current.path.length - 1];
+- var people = public._data.people
+- var orgs = public._data.orgs
+- var labels = public[lang]._data.labels
+
+doctype html
+html(lang='#{ lang }')
+  if (lang !== 'index')
+    != partial("../../_partials/meta/head", { lang: lang })
+
+  body.cs-reg.page-utl(id="page-#{ slug }")
+    
+    main
+      .logo
+        .ndc-logo.lyt-nav-float-left
+          != partial('../../_partials/logo/index')  
+      
+      != partial("../../_partials/pub/nav", { type: 'util', lang: lang })
+    
+      .lyt-utl-header
+        h1.lyt-title.ma-reg #{ title }
+      .lyt-utl.ds-grid-desk.ds-flex-mob.reverse
+        aside#side-data.ma-reg
+          p.cs-meta.ma-sml.dc-case #{ labels.anewdesigncongressconsultancy }
+          
+          h5.ff-sans.cs-meta.fw-hev.dc-case #{ labels.published }
+          date: p.cs-meta.ma-sml.dc-case #{ published }
+          
+          h5.ff-sans.cs-meta.fw-hev.dc-case #{ authors.length !== 1? labels.authors : labels.author }
+          ul.cs-meta.ma-sml.dc-case
+            each author in authors
+              li
+                a(href="#{ people[author].url }" target="_blank") #{ people[author].name }
+
+          h5.ff-sans.cs-meta.fw-hev.dc-case #{ clients.length !== 1? labels.clients : labels.client }
+          ul.cs-meta.ma-sml.dc-case
+            each client in clients 
+              li
+                a(href="#{ orgs[client].url }" target="_blank") #{ orgs[client].name }
+
+          h5.ff-sans.cs-meta.fw-hev.dc-case #{ labels.focus }
+          .ds-flex.ds-flex-wrap
+            each keyword in keywords
+              span.cs-meta.ma-r-tny.ma-tny.dc-case ##{ keyword }
+          block sideContent
+
+          each resource in resources
+            p.cs-meta.ma-sml.dc-case #[a(href="#{ resource[1] }" target="_blank") #{ resource[0] }]
+      
+        section#ui-main.ma-hge
+          .inner
+            block mainContent
+
+      != partial("../../_partials/footers/consulting", { lang: lang })
+      != partial("../../_partials/footers/footer", { lang: lang })

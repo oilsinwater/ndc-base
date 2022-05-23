@@ -1,0 +1,7 @@
+- const url = linksExternal ? item.url : `/${lang}/${item.url}`
+
+if(item.url)
+  a.link-block(href="#{ url }")
+    if(item.thumb)
+      img(src="#{ item.thumb }", alt="")
+    p #{item.title}

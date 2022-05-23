@@ -1,0 +1,21 @@
+- var lang = current.path[0]? current.path[0] : 'en'
+extends ./_utl_layout.jade
+
+block sideContent
+block mainContent
+  article.lyt-txt.cs-txt
+    .vid-player
+      iframe(width="100%" height="100%" sandbox="allow-same-origin allow-scripts allow-popups" src="https://tv.undersco.re/videos/embed/bbd1de76-b698-4d5b-93aa-25629705a239?peertubeLink=0" frameborder="0" allowfullscreen)
+    p.ma-sml.fs-sml.ff-sans.ma-lrg Project demonstration at HOPE2020.
+
+    p.ma-sml Today, the security requirements for safe working can be almost indistinguishable from the requirements needed by journalists, activists or human rights defenders. With this in mind, many widely-adopted tools offer little protection from outsider abuse and targeting by competitors or ideological opponents. 
+    p.ma-lrg What does it mean to organise, cooperate and moderate online in this panopticon era, where – as the professor #[a(href="https://mitpress.mit.edu/books/weaving-dark-web" target="_blank").ext Robert W. Gehl] correctly identifies – the security practices of everyday people more closely mirror those needed by paranoid dark web users?  It’s widely accepted as best practice that, rather than developing new security protocols and platforms, it’s better to build upon a proven stack. 
+    
+    a(href="/assets/research/signalbots-threat-modelling/threat-workshops.jpg") 
+      img(src="/assets/research/signalbots-threat-modelling/threat-workshops-thumb.jpg" alt="Click to Expand" style="cursor: zoom-in")
+      p.ma-sml.fs-sml.ff-sans.ma-lrg Collaborative systems and threat modelling for Signal bots. #[span(style="display: inline-block") (Click to expand)]
+
+    p.ma-sml In collaboration with Simply Secure and Throneless Tech, we conducted a multi-month deep threat modelling assessment for an innovative approach to organisational security. Using Signal - one of the most useful and widely-adopted tools for secure communication – we worked with Throneless Tech to map a user-powered chatbot infrastructure to Signal groups. This project is a ground-up system that protects the social graphs of secure Signal groups and provides IRC-like services to all participants whilst ensuring the participating group has no confusing novel overhead. 
+    p.ma-sml In our first test build, completed in collaboration with the Open Technology Fund and Reset Tech, these Signal Bots automate the process of distributing VPN access and other resources to people in environments with restricted Internet freedom. Our design is novel in that it leverages Signal’s end to end encryption for all parts of the bot, from bot-specific group settings to identity and trust. Unlike a traditional third-party bot, almost no data leaves the Signal network, ensuring that the bot itself can’t be attacked in order to profile involved participants. At the same time, a group’s owner can adjust levels of trust for participants and moderators, ensuring that internal bad actors or other rogue users don’t have access to the user list. 
+    p.ma-sml This threat modelling consultation illustrates how Signal can be deployed in novel ways outside of those officially supported by Whisper Systems. At the same time, our documentation and unique focus on socio-technical security practices allowed us to uncover and set strong guidelines for threats and risk assessment for targeted groups. 
+    p.ma-sml Our work was demonstrated at the international digital security conference #[a(href="https://hope.net/" target="_blank").ext HOPE2020] by Sarah Aoun, chief technologist at Open Technology Fund, and Josh King, from Throneless Tech. This is an ongoing engagement, and from our initial work, we have collectively identified a set of opportunities for expanding these tools and apply them to a variety of organisational and community requirements.

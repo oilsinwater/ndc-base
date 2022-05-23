@@ -1,0 +1,22 @@
+- var data = public[lang]._data.actions
+- var languages = public._data.languages
+
+section#ui-pub-utils
+  ul           
+    li
+      .ui-item
+        include ../../assets/s/feed.svg
+        .actions
+          span #{ data.subscribe }: #[a(href="https://discord.gg/Xu9D3qVana") Discord] / #[a(href="https://ndc.substack.com") Newsletter]
+
+    li
+      a.ui-item(href="mailto:hello@newdesigncongress.org")
+        include ../../assets/s/contact.svg
+        .actions
+          span #{ data.contact }
+
+    li
+      a.ui-item.ui-item-special(href="https://opencollective.com/newdesigncongress" target="_blank") 
+        include ../../assets/s/subscribe.svg
+        .actions
+          span #{ data.support }

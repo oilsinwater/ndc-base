@@ -1,0 +1,30 @@
+- var lang = current.path[0] ? current.path[0] : 'en'
+- var pub = current.path.length > 2 && current.path[1] === 'pub'? current.path[current.path.length-1] : ''
+- var slug = current.path[current.path.length - 1];
+- var people = public._data.people
+
+doctype html
+html(lang='#{ lang }')
+  if (lang !== 'index')
+    != partial("../_partials/meta/head", { lang: lang })
+
+  body.cs-reg.page-utl(id="page-#{ slug }")
+    
+    main
+      .logo
+        .ndc-logo.lyt-nav-float-left
+          != partial('../_partials/logo/index')  
+      
+      != partial("../_partials/pub/nav", { type: 'util', lang: lang })
+    
+      .lyt-utl-header
+        h1.lyt-title.ma-reg #{ title }
+      .lyt-utl.ds-grid-desk.ds-flex-mob
+        aside#side-data
+          block sideContent
+      
+        section#ui-main.ma-hge
+          .inner
+            block mainContent
+
+      != partial("../_partials/footers/footer", { lang: lang })

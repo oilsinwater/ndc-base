@@ -1,0 +1,15 @@
+.fn.ma-reg
+  if (link)
+   a(href="#{ link }") #{ title }
+  else
+    p #{ title }
+  if (platform || source)
+    p
+      if (source)
+        | #{ source }
+      if (platform)
+        | , #{ platform }
+      if (context)
+        | , #{ context }
+  if (date)
+    p: date #{ date }

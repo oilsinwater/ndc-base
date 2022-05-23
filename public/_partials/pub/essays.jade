@@ -1,0 +1,13 @@
+section#ui-pub-nav
+  ul
+    for pub, slug in public.en.pub._data
+      li
+        a.essay(href="../pub/#{ slug }" style="background-image: url(#{pub.thumb }); background-color: #{ pub.theme.light.pri.value }; color: #{ pub.theme.light.high.value } ")
+          p.title.ma-sml #{ pub.title }
+          p.authors.fw-med 
+            for a in pub.authors
+              span #{ public._data.people[a].name } 
+          p.date.fw-hev 
+            date #{ pub.published }
+        a(href="../pub/#{ slug }").label= pub.title
+        

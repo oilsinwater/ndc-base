@@ -1,0 +1,51 @@
+#uiSwitch[type='checkbox'] {
+  position: fixed;
+  top: 0;
+  right: 0;
+  visibility: hidden;
+}
+
+.uiSwitchLabel {
+  display: none;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 800px) {
+  .uiSwitchLabel {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 25;
+    pointer-events: auto;
+    user-select: none;
+    display: flex;
+  }
+
+  .uiSwitchLabel span {
+    padding: var(--ma-sml);
+    background-color: var(--co-pri);
+    color: var(--co-white);
+  }
+  
+  .uiSwitchLabel span:last-of-type {
+    background-color: var(--co-white);
+    border-right: 1px solid var(--co-sec);
+    border-top: 1px solid var(--co-sec);
+    color: var(--co-text);
+  }
+
+  
+
+  #uiSwitch[type='checkbox']:checked + .uiSwitchLabel span:first-of-type {
+    background-color: var(--co-white);
+    border-top: 1px solid var(--co-sec);
+    color: var(--co-text);
+  }
+ 
+  #uiSwitch[type='checkbox']:checked + .uiSwitchLabel span:last-of-type {
+    background-color: var(--co-pri);
+    color: var(--co-white);
+    border: none;
+  }
+}

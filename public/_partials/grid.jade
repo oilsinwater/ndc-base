@@ -1,0 +1,87 @@
+- var lang = current.path[0]? current.path[0] : 'en'
+- var strings = public[lang]._data.strings
+- var labels = public[lang]._data.labels
+
+.ds-non-desk
+  != partial('./logo/index')
+
+#ui-grid.ds-grid
+
+  a(href="https://components.one/posts/the-new-pornographers-tech-reviews" style="background-color: rgba(254, 212, 208, 0.8); color: white; background-blend-mode: soft-light;" target="_blank").lyt-cell.lyt-cell-feature.lyt-gr2.lyt-gc2
+    .lyt-cell-content(style="z-index:5")
+      .lyt-cell-container
+        .section: label Report
+        .meta
+          .title: h4 The New Pornographers
+          .tagline: p.ext An analysis of consumer tech review media.#[br]In collaboration with Components.
+
+    video(autoplay muted disablePictureInPicture controlsList="nodownload" loop playsinline src='/assets/tl/tnp.mp4' style="opacity:1")
+
+  a(href="https://www.inkandswitch.com/backchannel/" style="background-image: url(/assets/tl/rolodex.jpg); background-color: rgba(0, 21, 100, 0.9); color: white; background-blend-mode: soft-light" target="_blank").lyt-cell.lyt-cell-feature.lyt-gr2.lyt-gc2
+    .lyt-cell-content(style="z-index:5")
+      .lyt-cell-container
+        .section: label Partner Work
+        .meta
+          .title: h4 Backchannel: #[br]A relationship-based #[br]digital identity system
+          .tagline: p.ext Drawing inspiration from our work into digital identity, our friends at Ink & Switch have protoyped Backchannel: an alternative point of view on digital identity that is collaborative, user-friendly and resistant to attack.
+
+  a(href="#" style="background-color: rgba(254, 212, 208, 0.8); background-image: url(/assets/tl/digiconsent.jpg); color: black; background-blend-mode: soft-light; display: none;" target="_blank").lyt-cell.lyt-cell-feature.lyt-gr2.lyt-gc2
+    .lyt-cell-content(style="z-index:5")
+      .lyt-cell-container
+        .section: label Report
+        .meta
+          .title: h4 The Limits to Digital Consent
+          .tagline: p Understanding the risks and limitations of ethical consent and data collection for underrepresented communities.
+
+  a(href="https://tv.undersco.re/videos/watch/f769b6e4-d992-4a73-bac1-b05ee6116368" style="background-image: url(/assets/tl/cable.png); background-color: rgba(0,0,0,0.75); color: white; background-blend-mode: soft-light" target="_blank").lyt-cell.lyt-cell-feature.lyt-gr1.lyt-gc1
+    .lyt-cell-content(style="z-index:5")
+      .lyt-cell-container
+        .section: label Talk
+        .meta
+          .title: h4 Design Ethics?#[br]No Thanks
+          .tagline: p.ext Why design ethics will never change the world, and what we can do instead.
+
+  a(href="https://www.reroute.fm/episode/reimagining-digital-infrastructure" style="background-image: url(/assets/tl/reroute.jpg); background-color: rgba(0,0,0,0.35); color: white; background-blend-mode: soft-light" target="_blank").lyt-cell.lyt-cell-feature.lyt-gr1.lyt-gc1
+    .lyt-cell-content(style="z-index:5")
+      .lyt-cell-container
+        .section: label Audio
+        .meta
+          .title: h4 Reimagining Digital Infrastructure
+          .tagline: p.ext A conversation between Cade Diehm and AltspaceVR cofounder Gavan Wilhite on digital regionalism and exploring new practices via alternative forking. For REROUTE.FM
+
+  a(href="https://stream.undersco.re" style="background-color: rgb(29, 57, 73, 0.4); color: white; background-blend-mode: soft-light" target="_blank").lyt-cell.lyt-cell-feature.lyt-gr2.lyt-gc2
+    .lyt-cell-content(style="z-index:5")
+      .lyt-cell-container
+        .section: label #{ labels.research }
+        .meta
+          .title: h4 The Para-Real:#[br]Finding the Future in Unexpected Places
+          .tagline: p.ext A collection of livestreamed expert interviews conducted with members of resilient subcultures. A major component of our research into alternative economic models and new forms of digital identity. #[br]In collaboration with ReclaimFutures.
+    video(autoplay muted disablePictureInPicture controlsList="nodownload" loop playsinline src='/assets/tl/pr.mp4' style="opacity:1")
+
+  a(href="pub/aesthetic-flattening" style="background-image: url(/assets/thumb/af.png); background-color: rgba(0,0,0,0.75); color: white; background-blend-mode: soft-light").lyt-cell.lyt-cell-feature.lyt-gr1.lyt-gc2
+    .lyt-cell-content
+      .lyt-cell-container
+        .section: label Essay
+        .meta
+          .title: h4 Aesthetic Flattening
+          .tagline: p A new essay co-authored with Jaz Choi that defines the context collapse of user experience. Originally published in ACM Interations 2021.
+
+
+
+  a(href="https://interdependence.fm/episodes/weaponized-design-security-vulnerability-and-caution-over-the-decentralized-web-with-cade-diehm-new-design-congress" style="background-image: url(/assets/tl/interdependence.jpg); background-color: rgba(0,0,0,0.75); color: white; background-blend-mode: soft-light; background-size: cover;" target="_blank").lyt-cell.lyt-cell-feature.lyt-gr1.lyt-gc1
+    .lyt-cell-content
+      .lyt-cell-container
+        .section: label Audio
+        .meta
+          .title: h4 Interdependence
+          .tagline: p.ext A discussion with Holly Herndon and Mat Dryhurst on Weaponized Design, security, vulnerability, and the dangers of embracing Web 3.0 technologies.
+
+
+
+  a(href="https://criticalfuture.tech/issue-8-june-2021-cade-diehm-2630b7b4cabd/" style="background-image:url(/assets/tl/cft.png); background-position: top; background-color: rgba(90, 0, 140, 0.5); color: white; background-blend-mode: soft-light" target="_blank").lyt-cell.lyt-cell-feature.lyt-gr1.lyt-gc1
+    .lyt-cell-content
+      .lyt-cell-container
+        .section: label Audio
+        .meta
+          .title: h4 Critical Futures Tech
+          .tagline: p.ext A conversation with Lawrence B. Almeida on how the Silicon Valley's technology ethics movement deflects deeper criticism of societies.

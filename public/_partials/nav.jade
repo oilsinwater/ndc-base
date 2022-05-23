@@ -1,0 +1,15 @@
+- var newPath = JSON.parse(JSON.stringify(current.path))
+- var lang = newPath[0]? newPath[0] : 'en'
+- var data = public[lang]._data.nav
+
+section.lyt-side.lyt-side-fixed
+  .lyt-nav
+    nav.ma-reg
+      ul
+        li: a(href="/").lyt-logo
+          include ./assets/s/ndc.svg 
+        for i in data.links
+          li.dc-case
+            a(href='#{ i[1] }') #{ i[0] }
+      for i in data.intro
+        p.cs-reg.ma-reg #{ i }

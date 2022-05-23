@@ -1,0 +1,61 @@
+.menu-full {
+  overflow: scroll;
+  scrollbar-width: thin;
+  scrollbar-track-color: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.menu-full .ndc-logo a {
+  display: inline-block;
+}
+
+.menu-full .content {
+  padding: 0 calc(1rem * var(--lh-reg));
+}
+
+.menu-full .row {
+  display: flex;
+  align-items: flex-start;
+  overflow: scroll;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+}
+
+.menu-full .row::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-full .content.row {
+  padding: 0 calc(2rem * var(--lh-reg)) 0 calc(1.1rem * var(--lh-reg));
+}
+
+.menu-full .row .link-block {
+  margin-right: var(--ma-reg);
+  min-width: 14rem;
+  max-width: 15rem;
+  font: var(--cs-txt);
+  /* letter-spacing: -1px; */
+}
+.menu-full .row .link-block img {
+  margin-bottom: var(--ma-sml);
+}
+
+.menu-full .row .link-block p {
+  max-width: 14rem;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-full header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-full header a {
+    margin-bottom: var(--ma-reg);
+  }
+
+  .menu-full .lyt-footer {
+    padding: calc(1rem * var(--lh-reg)) calc(1rem * var(--lh-reg)) calc(2.5rem * var(--lh-reg))
+      calc(1rem * var(--lh-reg));
+  }
+}

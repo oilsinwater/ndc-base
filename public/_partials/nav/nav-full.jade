@@ -1,0 +1,60 @@
+- const sort = (arr) => {
+-   return Object.values(arr).sort(function(a, b) { 
+-     let aDate = new Date(a.published ? a.published : '01-01-2030')
+-     let bDate = new Date(b.published ? b.published : '01-01-2030')
+-     return (aDate < bDate) ? 1 : ((bDate < aDate) ? -1 : 0) 
+-   })
+- }
+
+- const essays = sort(public[lang].pub._data)
+- const research = sort(public[lang].research._data)
+- const streams = sort(public[lang].timeline._data.streams)
+
+- var labels = public[lang]._data.labels
+
+
+
+style
+  include ./style.css
+
+.menu-full
+  .ndc-logo
+    != partial('../logo/index.jade')
+  
+  header.content.ma-lrg
+    a(href="/").cs-hg1.ma-r-lrg.ma-sml.ds-i-bloc
+      span.dc-case index
+    a(href="/#{ lang }/about").cs-hg1.ma-r-lrg.ma-sml.ds-i-bloc
+      span.dc-case What We Do
+    a(href="/#{ lang }/team").cs-hg1.ma-r-lrg.ma-sml.ds-i-bloc
+      span.dc-case Team
+    a(href="mailto:hello@newdesigncongress.org").cs-hg1.ma-r-lrg.ma-sml.ds-i-bloc
+      span.dc-case Contact
+    a(href="https://opencollective.com/newdesigncongress").cs-hg1.ma-sm.ds-i-bloc
+      span.dc-case Support Us      
+  h2#menu-title-essays.content.cs-hg1.ma-reg.dc-case #{ labels.community } /
+  .content.row.ma-lrg
+    a(href="https://discord.gg/Xu9D3qVana").cs-hg1.ma-r-lrg.ma-sml.ds-i-bloc
+      span.dc-case Community Discord
+    a(href="https://cloud.undersco.re/apps/forms/tRKmKkpXNSQj5Jd2").cs-hg1.ma-r-lrg.ma-sml.ds-i-bloc
+      span.dc-case Expertise Network      
+    a(href="https://ndc.substack.com").cs-hg1.ma-r-lrg.ma-sml.ds-i-bloc
+      span.dc-case Newsletter
+  
+  h2#menu-title-essays.content.cs-hg1.ma-reg.dc-case #{ labels.essays } /
+  .content.row.ma-lrg
+    for item in(essays)
+      != partial('./link-block.jade', { item, lang })
+  h2#menu-title-research.content.cs-hg1.ma-reg.dc-case #{ labels.research } /
+  .content.row.ma-lrg
+    for item in(research)
+      != partial('./link-block.jade', { item, lang })
+  h2#menu-title-live.content.cs-hg1.ma-reg.dc-case #{ labels.streams } /
+  .content.row.ma-lrg
+    for item in(streams)
+      != partial('./link-block.jade', { item, lang, linksExternal: true })
+
+  != partial("../../_partials/footers/footer_nav", { lang: lang })
+
+script
+  include ./script.js

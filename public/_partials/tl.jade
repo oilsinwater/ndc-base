@@ -1,0 +1,88 @@
+- var lang = current.path[0]? current.path[0] : 'en'
+- var strings = public[lang]._data.strings
+- var labels = public[lang]._data.labels
+
+- var tl = []
+- for i in public[lang].pub._data
+  - tl.push(i)
+- for i in public[lang].research._data
+  - tl.push(i)
+- for i in public[lang].timeline._data
+  - for t in i
+    - tl.push(t)
+
+- tl.sort(function(a, b){ 
+  - let aDate = new Date(a.published ? a.published : '01-01-2030')
+  - let bDate = new Date(b.published ? b.published : '01-01-2030')
+  - return (aDate < bDate) ? 1 : ((bDate < aDate) ? -1 : 0) 
+- })
+
+-function prettyDate(dateString, condensed){
+  -if (!dateString) return labels.upcoming
+  -var date = new Date(dateString)
+  -var d = date.getDate()
+  -var monthNames = labels.dates
+  -var m = monthNames[date.getMonth()]
+  -var y = date.getFullYear()
+  -return condensed ? m+' '+y : d+' '+m+' '+y;
+-}
+
+-function noWrapLastWord(titleString){
+- let str = titleString.split(' ');
+
+- return str.length > 1 ? `<span>${str.slice(0, -1).join(" ")}</span><span class="ext last-word"> ${str[str.length - 1]}</span>` : `<span class="ext">${titleString}</span>`;  
+-}
+
+aside#ui-tl
+  header
+    .tl-logo
+      != partial('./logo/index')
+    
+    .tl-intro
+      for para in strings.intro
+        p #{ para }
+      a(href="/#{ lang }/about") More about us…
+      p: a(href="https://ndc.substack.com" target="_blank").ext Join newsletter
+
+  .lyt-tl
+    input(type="radio" name="filter" checked=true)#filterAll
+    input(type="radio" name="filter")#filterEssays
+    input(type="radio" name="filter")#filterResearch
+    input(type="radio" name="filter")#filterStreams
+    input(type="radio" name="filter")#filterSoftware
+    input(type="radio" name="filter")#filterCables
+    nav#ui-fl
+      h3 #{ labels.timeline }
+      ul
+        li 
+          label(for="filterAll").filterLabel.filterAll #{ labels.all }
+        li 
+          label(for="filterEssays").filterLabel.filterEssays #{ labels.essays }
+        li 
+          label(for="filterResearch").filterLabel.filterResearch #{ labels.research }
+        li 
+          label(for="filterStreams").filterLabel.filterStreams #{ labels.streams }
+        li 
+          label(for="filterSoftware").filterLabel.filterSoftware #{ labels.software }
+        li
+          label(for="filterCables").filterLabel.filterCables #{ labels.cables }
+    for tli in(tl)
+      if (tli.title)
+        if (tli.link)
+          a(href="#{ tli.link }" target="_blank" class="tl-#{ tli.type }").lyt-tl-i
+            .lyt-tl-n
+                label!= noWrapLastWord(tli.title)
+              .lyt-tl-t
+                label #{ labels[tli.type] }
+              .lyt-tl-d
+                date #{ prettyDate(tli.published) }
+                date.condensed #{ prettyDate(tli.published, true) }
+        else
+          a(href="#{ tli.url }" class="tl-#{ tli.type }").lyt-tl-i
+            .lyt-tl-n
+              label #{ tli.title }
+            .lyt-tl-t
+              label #{ labels[tli.type] }
+            .lyt-tl-d
+              date #{ prettyDate(tli.published) }
+              date.condensed #{ prettyDate(tli.published, true) }

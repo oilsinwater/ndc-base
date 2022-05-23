@@ -1,0 +1,34 @@
+- var data = public[lang]._data.mast
+- var people = public._data.people
+- var orgs = public._data.orgs
+- if (theme) {
+-   var blend = theme.blend
+-   var color = theme.blend === 'difference' ? 'beige' : 'inherit'
+-   var opacity = theme.blend === 'difference' ? '1' : '0.5'
+- }
+
+section.lyt-article-header.ps-rel
+  .lyt-title
+    h1.mcw-hg1(style="mix-blend-mode: #{ blend }; color: #{ color }") #{ title }
+  .lyt-meta.ds-grid.ds-grid-auto
+    
+    if (authors)
+      p(style="mix-blend-mode: #{ blend }; color: #{ color }")
+        span.cs-tny.dc-caps.ds-bloc.fw-hev #{ data.text } 
+        for a in authors
+          span.cs-reg.ds-bloc 
+            a(href="#{ people[a].url }" target="_blank" style="mix-blend-mode: #{ blend }; color: #{ color }; text-decoration: underline;") #{ people[a].name }
+    
+    if (translators)
+      p(style="mix-blend-mode: #{ blend }; color: #{ color }")
+        span.cs-tny.dc-caps.ds-bloc.fw-hev #{ data.translate } 
+        for t in translators
+          span.cs-reg.ds-bloc 
+            a(href="mailto:#{ t.email }" style="mix-blend-mode: #{ blend }; color: #{ color }; text-decoration: underline;") #{ t.name }
+
+    if (published)
+      p(style="mix-blend-mode: #{ blend }; color: #{ color }")
+        span.cs-tny.dc-caps.ds-bloc.fw-med #{ data.date } 
+        span.cs-reg.ds-bloc #{ published }
+  .fx-bg-vid
+    video(autoplay muted disablePictureInPicture loop playsinline src='/assets/pub/#{ pub }/title.mp4' style="opacity: #{ opacity }") 

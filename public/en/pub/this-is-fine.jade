@@ -1,0 +1,355 @@
+- var base = '/assets/pub/this-is-fine'
+
+input(type="checkbox")#toggleFootnotes
+article.lyt-article
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-hge: p The last fifteen years has seen a surge of interest in decentralised technology. From well-funded blockchain projects like IPFS to the emergence of large scale information networks such as Dat, Scuttlebutt and ActivityPub, this is renewed life in peer-to-peer technologies; a renaissance that enjoys widespread growth, driven by the desire for platform commons and community self-determination. These are goals that are fundamentally at odds with – and a response to – the incumbent platforms of social media, music and movie distribution and data storage. As we enter the 2020s, centralised power and decentralised communities are on the verge of outright conflict for the control of the digital public space. The resilience of centralised networks and the political organisation of their owners remains significantly underestimated by protocol activists. At the same time, the decentralised networks and the communities they serve have never been more vulnerable. The peer-to-peer community is dangerously unprepared for a crisis-fuelled future that has very suddenly arrived at their door.
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg
+      blockquote 
+        p: em #[label(for="toggleFootnotes") “Good luck to all those striving for decentralization, balance and equality in the world. You are fighting the right battle. This battle may well be the most important battle of our generation.”]
+    .lyt-fn
+      != partial("../../_partials/pub/note", { type:"site", link:"https://telegra.ph/What-Was-TON-And-Why-It-Is-Over-05-12",  title:"What was TON and why is it over?", source:"Pavel Durov", context:"founder of Telegram", date:"12 May 2020" })
+            
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg
+      blockquote 
+        p: em #[label(for="toggleFootnotes") “‘Torrents are down, worldwide’ said no one, ever. #centralizationisfragile”]
+
+    .lyt-fn
+      != partial("../../_partials/pub/note", { type:"tweet", link:"https://twitter.com/andrestaltz/status/1252660215897522176",  title:"@AndreStaltz", source:"André Staltz", platform:"Twitter", date:"21 April 2020" })
+      
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg
+      p How precarious are decentralised networks? Answering this requires an understanding of both the power of their political energy and history of antagonism. Conceptually, peer-to-peer technologies are not new – they are networks of digital topologies, intertwining configurations of software clients, devices, connections and protocols whose ownership is distributed. They work in concert to provide a robust alternative to centralised governance, ideally achieving data resilience without transferring the ownership of this data to a single authority. The internet itself is a decentralised network.
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg      
+      p Often – but not always – decentralised networks emerge due to a collective desire to #[label(for="toggleFootnotes") rebalance societal power]. One of the antagonisms that brought these tensions to the boiling point was the series of legal battles over digital intellectual property rights.  This conflict – a so-called Copyright War –  had #[label(for="toggleFootnotes") started “offline” decades earlier], but collided with digital infrastructure for the first time in 1999 with the launch of Napster. Its trajectory would last over a decade and the fallout reverberates into the present. To understand the Copyright War is to understand how close copyright reformists came to dismantling an existing centralised data ownership structure, and how they failed to appreciate the resilience of this opponent as it economically and legally exploited their peer-to-peer model. 
+    .lyt-fn
+      != partial("../../_partials/pub/note", { type:"site", link:"https://infocivics.com/",  title:"Information Civics: Deconstructing the power structures of large-scale social computing networks", source:"Paul Frazee" })
+  
+      != partial("../../_partials/pub/note", { type:"site", link:"http://www.openculture.com/2019/04/home-taping-is-killing-music.html/",  title:"Home Taping Is Killing Music: When the Music Industry Waged War on the Cassette Tape in the 1980s, and Punk Bands Fought Back", source:"Ted Mills", platform:"Open Culture", date:"5 April 2019" })
+
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg
+      p Early file-sharing software featured simple interfaces and enormous content offerings. They arrived years before popular digital music stores, and as such Napster and its clones shook the music and movie industry into mobilising against them. These networks were tied to their client software, and by targeting their developers with litigation, were easily shut down. Copyright reformists first campaigned on behalf of Napster and similar tools, but as residential bandwidth scarcity and demand for data freedom grew, these activists saw new promise beneath the application – an opportunity embedded in the network layer. 
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg
+      p BitTorrent’s launch in 2001 enabled file-sharing on a massive, efficient and resilient scale. By embedding the decentralised ideology beneath the desktop client, and within the protocol on which the client runs, the act of file-sharing became much more resistant to legislative attack. To many of its supporters and combatants, BitTorrent seemed unstoppable. Most of the early 2000s discourse prophesied the devastation of an existing capitalist cultural order, accelerated by significant ideological moments of the era: the establishment of the first collaborative online #[label(for="toggleFootnotes") music library], the foundation of the Pirate Bay website, censorship-resistant document distribution, and the formation of the #[label(for="toggleFootnotes") Piratpartiet], and its #[label(for="toggleFootnotes") international equivalents.] 
+    .lyt-fn
+      != partial("../../_partials/pub/note", { type:"site", link:"https://en.wikipedia.org/wiki/What.CD",  title:"Related: What.CD (2007 – 2016)", source:"Wikipedia" })
+
+      != partial("../../_partials/pub/note", { type:"site", link:"https://arstechnica.com/tech-policy/2009/02/rick-falkvinge-is-the-face",  title:"Political pirates: A history of Sweden’s Piratpartiet", source:"Nate Anderson", platform:"Ars Technica", date:"26 February 2009" })
+      
+      != partial("../../_partials/pub/note", { type:"site", link:"https://pp-international.net/",  title:"Related: Pirate Party International", source:"Political Party", platform:"Twitter" })
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg
+      p The incumbent powers worked with lawmakers to draft new legislation and went after ‘leechers’ - people downloading content, but who through BitTorrent’s protocol design became unwitting #[label(for="toggleFootnotes") uploaders themselves]. Litigators discovered that by conducting surveillance on a BitTorrent tracker, they could bulk collect participating IP addresses and randomly file severe civic lawsuits, utilising harsher laws reserved for distribution. Their targets were often the economically vulnerable, including #[label(for="toggleFootnotes") #[em “children, grandparents, unemployed single mothers, college professors—a random selection from the millions of Americans who have used P2P networks.”]] It was one piece of a broader scattershot strategy that spared no one; #[label(for="toggleFootnotes") infrastructure], #[label(for="toggleFootnotes") physical media], broadcast media, adjacent software projects and device manufacturers were all targeted. These tactics could manifest as copyright taxes on CD–Rs or portable media players, or in the form of legal liability, such as unsuccessful proposals for ISPs to bear responsibility for user activity. 
+    .lyt-fn
+      != partial("../../_partials/pub/note", { type:"site", link:"https://www.bittorrent.org/beps/bep_0003.html",  title:"Bittorent Protocol Specification", source:"Bram Cohen", platform:"Bittorrent, Inc.", date:"10 Jan 2008" })
+
+      != partial("../../_partials/pub/note", { type:"site", link:"https://www.eff.org/wp/riaa-v-people-five-years-later#4",  title:"RIAA v. The People: Five Years Later", source:"Electronic Frontier Foundation", date:"30 September 2008" })
+
+      != partial("../../_partials/pub/note", { type:"site", link:"https://www.cnet.com/news/riaa-drops-lawsuits-isps-to-battle-file-sharing",  title:"RIAA drops lawsuits; ISPs to battle file sharing", source:"Greg Sandoval", platform:"CNET", date:"12 November 2009" })
+ 
+
+      != partial("../../_partials/pub/note", { type:"paper", link:"https://www.ejustice.just.fgov.be/mopdf/2009/12/23_1.pdf",  title:"Copyright levies", source:"Service public fédéral Justice, Belgium", date:"20 July 2005" })
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg
+      p The entertainment industry framed the conflict as a fight against movie and music “piracy.” However, this rhetoric obscures the serious implications of the tactics deployed by these giants. Central to the defeat of this particular peer-to-peer movement was that its infrastructure was vulnerable to #[label(for="toggleFootnotes") #[em weaponised design]], in which the network protocol directly empowers attackers through its design. For BitTorrent, this empowerment came as the protocol exposes every user’s participation in the network. This data was exploited to unmask users, ruin lives and provide justification for new legislation. The collapse of centralised power that was prophesied in the 2000s never materialised. Centralised actors outmaneuvered the reformists, shielding themselves and their own ecosystems from scrutiny. #[label(for="toggleFootnotes") The concentrated media companies of the 2020s now dwarf their 1999 equivalents], and the innovations pioneered by decentralised infrastructure were exploited by the winners as they ascended to monopoly. 
+    .lyt-fn
+      != partial("../../_partials/pub/note", { type:"site", link:"https://ourdataourselves.tacticaltech.org/posts/30-on-weaponised-design/",  title:"On Weaponised Design", source:"Cade Diehm", platform:"Tactical Tech", date:"16 February 2018" })
+
+      != partial("../../_partials/pub/note", { type:"site", link:"https://thewaltdisneycompany.com/walt-disney-company-acquire-twenty-first-century-fox-inc-spinoff-certain-businesses-52-4-billion-stock-2/",  title:"The Walt Disney Company To Acquire Twenty-First Century Fox For $52.4 Billion In Stock", source:"The Walt Disney Company", date:"14 December 2017" })
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg
+      p The most poetic example of peer-to-peer technologies pressed into the service of corporate giants is the story of peer-to-peer software engineer Ludvig Strigeus. Having built the popular μTorrent client and perhaps sensing the changing winds, Strigeus joined former μTorrent CEO Daniel Ek’s new startup. #[label(for="toggleFootnotes") Together, they built a quasi-Napster/BitTorrent hybrid that relied on a vast, unauthorised music catalog drawn from its user base]. Today, that architecture is long gone, but the startup – Spotify – #[label(for="toggleFootnotes") boasts 124 million subscribers, taking in USD$7.44 billion in revenue] but paying artists just USD$4.37 per 1,000 streams. 
+
+    .lyt-fn
+      .fn.ma-reg
+        a(href="https://mitpress.mit.edu/books/spotify-teardown" target="_blank") 
+          img(src="#{ base }/spotify-teardown.jpg" style="width:30%; float: left; margin-top: 0.5rem; margin-right: 1rem; margin-bottom: 2rem;")
+          | Spotify Teardown
+          br 
+          | Inside the Black Box of Streaming Music 
+        p Maria Eriksson, Rasmus Fleischer, Anna Johansson, Pelle Snickars,  Patrick Vonderau, The MIT Press
+        date 25 January 2019
+
+      != partial("../../_partials/pub/note", { type:"site", link:"https://investors.spotify.com/financials/default.aspx",  title:"Quarterly Results (2018 – 2020)", source:"Spotify AB" })
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-hge
+      p As we can see from history, blind faith in technically resilient network protocols is naïve and misplaced. The Copyright War drives home hard lessons around politics, corporate appropriation, transparency, collectivism and the urgency of network safety, all illustrated in the #[label(for="toggleFootnotes") decimated lives of key or adjacent reformists], collateral user damage, and resulting legislation. In 2013, BitTorrent was responsible for #[label(for="toggleFootnotes") 3.35% of all internet traffic]. Today the networks remain but this market share has shrunk. Torrents are down worldwide.
+
+    .lyt-fn
+      != partial("../../_partials/pub/note", { type:"site", link:"https://en.wikipedia.org/wiki/Aaron_Swartz",  title:"Aaron Swartz (1986 – 2013)", source:"Wikipedia" })
+
+      .fn.ma-reg
+        video(autoplay muted disablePictureInPicture loop playsinline src='#{ base }/piratebay-raid.mp4') 
+        a(href="https://www.youtube.com/watch?v=PDWlT3ilAL0" target="_blank") Swedish Police Raid the Pirate Bay
+        p "Kevin", Youtube.com
+
+      != partial("../../_partials/pub/note", { type:"site", link:"https://blog.paloaltonetworks.com/app-usage-risk-report-visualization/",  title:"Bittorrent global usage", source:"Palo Alto Networks" })
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg
+      blockquote 
+        p: em #[label(for="toggleFootnotes") “Only a crisis — actual or perceived — produces real change. When the crisis occurs, the actions that are taken depend on the ideas that are lying around. That, I believe, is our basic function: to develop alternatives to existing policies, to keep them alive and available until the politically impossible becomes politically inevitable.”]
+
+    .lyt-fn
+      .fn.ma-reg
+        a(href="https://press.uchicago.edu/ucp/books/book/chicago/C/bo18146821.html" target="_blank") 
+          img(src="#{ base }/capitalism-and-freedom.jpg" style="width:30%; float: left; margin-top: 0.5rem; margin-right: 1rem; margin-bottom: 2rem;")
+          | Capitalism and Freedom
+        p Milton Friedman, University of Chicago Press
+        date 1 January 1962
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg
+      blockquote 
+        p: em #[label(for="toggleFootnotes") “Your objective [as a designer] should always be to eliminate instructions entirely by making everything self-explanatory, or as close to it as possible. When instructions are absolutely necessary, cut them back to a bare minimum.”]
+
+    .lyt-fn
+      .fn.ma-reg
+        a(href="https://www.sensible.com/dmmt.html" target="_blank") 
+          img(src="#{ base }/dontthink.jpg" style="width:30%; float: left; margin-top: 0.5rem; margin-right: 1rem; margin-bottom: 2rem;")
+          | Don't Make Me Think
+        p Steve Krug, New Riders (2nd Edition)
+        date 28 August, 2005
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg
+      p As the Copyright War faded into the background, the iPhone paradigm – a constrained, centralised, individualised system marketed as “the individual at one with their device” – became the standard for personal computing. New and boundless design-led opportunities appeared almost overnight, powered by a bottomless injection of venture capital that fostered the accelerated growth of #[label(for="toggleFootnotes") platform capitalism]. To quote design and art historians Arden Stern and Sami Siegelbaum: 
+
+    .lyt-fn
+      .fn.ma-reg
+        a(href="https://www.wiley.com/en-se/Platform+Capitalism-p-9781509504862" target="_blank") 
+          img(src="#{ base }/platform-capitalism.jpg" style="width:30%; float: left; margin-top: 0.5rem; margin-right: 1rem; margin-bottom: 2rem;")
+          | Platform Capitalism
+        p Nick Srnicek, Wiley
+        date November 2016
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg
+      blockquote 
+        p: em #[label(for="toggleFootnotes") “Neoliberalism can be distinguished from Fordist capitalism’s mass production of consumer goods by the ways it seeks to marketize previously uncommodified sectors of human life. Indeed, one of the questions [we seek] to explore is how design might enable this process by locating new sources of extraction and accumulation by facilitating the commodification of that which was once thought to be outside the scope of the market.”]
+    .lyt-fn
+      != partial("../../_partials/pub/note", { type:"paper", link:"https://doi.org/10.1080/17547075.2019.1667188",  title:"Special Issue: Design and Neoliberalism", source:"Arden Stern & Sami Siegelbaum", platform:"Design and Culture", date:"26 September 2019" })
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-lrg
+      p Finding these new sources of extraction became a priority for centralised tech platforms. They had spent the previous decade achieving scale and resilience; now they sought to extract new value and justify their presence in daily life. Framing the mobile device as an extension of self made the emergence of the new ‘digital wellbeing’ market compelling. For example, #[label(for="toggleFootnotes") Safety Check] – a Facebook feature introduced after the 2011 Tōhoku earthquake and tsunami – encourages users in disaster-stricken areas to interact with the platform to mark themselves as safe and be connected to communication services for disaster relief. The Apple Watch – originally launched as a general-purpose wrist computer – underwent a complete rebrand as a digital health and fitness device, and #[label(for="toggleFootnotes") its ability to detect and call emergency services in crisis is actively marketed in emotional video testimonials] released by its maker. Amazon Ring and Google Nest encourage consumers to actively contribute to a growing network of community surveillance systems promising safety in exchange for ceding the household’s digital capital to a powerful, unaccountable platform.
+    .lyt-fn
+      .fn.ma-reg
+        a(href="https://www.facebook.com/about/safetycheck/" target="_blank") 
+          img(src="#{ base }/fbcheck.png") 
+          | Safety Check
+        p Facebook Crisis Response
+
+  .lyt-row.ma-lrg
+    .fn.ma-reg.cs-tny.lyt-inline
+      video(autoplay muted disablePictureInPicture loop playsinline src='#{ base }/dear-apple.mp4')
+      a(href="https://www.youtube.com/watch?v=N-x8Ik9G5Dg" target="_blank") 
+        p "Dear Apple"
+      p Apple Watch campaign
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg
+      p These tech-driven efforts to respond to safety and crisis are not new, and indeed much of this work is framed both internally and externally within the cliche of #[label(for="toggleFootnotes") “making the world a better place”]. But these efforts also serve a dual function; they are political tools that through design can instantly reconfigure a moment in time. An Apple Watch is marketed to the physically vulnerable senior citizen, but the same interface has been programmed as a #[label(for="toggleFootnotes") digital bystander, bearing witness on behalf of Black Americans during traffic stops]. Effective design at scale is obvious and frictionless – lowering cognitive and training barriers to adoption – and contextually voided – enabling context to be re-inserted after the design is shipped.
+    .lyt-fn
+      != partial("../../_partials/pub/note", { type:"tweet", link:"https://www.theguardian.com/technology/2016/may/12/facebook-free-basics-india-zuckerberg",  title:"The inside story of Facebook's biggest setback", source:"Rahul Bhatia", platform:"The Guardian", date:"12 May 2016" })
+      
+      != partial("../../_partials/pub/note", { type:"reddit", link:"https://www.reddit.com/r/shortcuts/comments/9huqiw/getting_pulled_over_by_police/",  title:"“Hey Siri, I’m getting pulled over” iOS Shortcut for recording traffic stops", source:"/u/RobertAPetersen", platform:"Reddit", date:"21 September 2018" })
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-hge
+      p In her 2007 book, The Shock Doctrine, Naomi Klein lays bare the clandestine policies employed by powerful societies to expand influence and ownership through exploitation of real or manufactured crisis. Klein cites societal-wide disasters - the invasion of Iraq as a pretext for greater US control in the Middle East or, most recently, identifying the privatisation of infrastructure after the 2018 Puerto Rico hurricane as the pretexts for this overreach. The ubiquity of #[label(for="toggleFootnotes") human-centred design] offers flexible opportunities to use technologies to extract value and consolidate power. The design of the Apple Watch, Safety Check and particularly #[label(for="toggleFootnotes") COVID–19 Contact Tracing APIs] must be understood as whitelabelled crisis response – #[em Shock Doctrine as a Service] – employing dominant, market-driven design methodologies to drive mass adoption of products and services that are then easily reconfigured during moments of disaster. Presented as opportunities to protect or save lives, these functionalities are rolled out in homes, communities and cities as software updates or addons – without allowing any negotiation or meaningful consent. When deployed in response to broader crises, their creators benefit from being perceived as philanthropic architects, intervening on humanitarian grounds. In reality, they negotiate from positions of extreme concentrations of wealth, technical expertise and #[label(for="toggleFootnotes") political influence]. The philanthropic framing robs dissenters of what remains of their ability to withdraw consent: How can one object to saving lives?
+
+    .lyt-fn
+      != partial("../../_partials/pub/note", { type:"site", link:"https://www.designkit.org/human-centered-design",  title:" “Human Centered Design”: a design process in which a designer builds a “deep empathy for the people they are designing for.”", source:"IDEO" }) 
+
+      != partial("../../_partials/pub/note", { type:"site", link:"https://github.com/DP-3T/documents/issues/118",  title:"“The long tail of contact tracing” (societal impact of CT)", source:" @InstitutefTiPI", platform:"GitHub Issues", date:"10 April 2020" })
+
+      != partial("../../_partials/pub/note", { type:"site", link:"https://www.technologyreview.com/2020/05/07/1000961/launching-mittr-covid-tracing-tracker/",  title:"A flood of coronavirus apps are tracking us. Now it’s time to keep track of them.", source:"Patrick Howell O'Neill, Tate Ryan-Mosley & Bobbie Johnson", platform:"MIT Technology Review", date:"7 May 2020" })
+        
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg
+      blockquote 
+        p: em #[label(for="toggleFootnotes") “There is a part of my high-school globo-claustrophobia that has never left me, and in some ways only seems to intensify as time creeps along. What haunts me is not exactly the absence of literal space so much as a deep craving for metaphorical space: release, escape, some kind of open-ended freedom.”]
+    .lyt-fn
+      .fn.ma-reg
+        a(href="https://naomiklein.org/the-shock-doctrine/" target="_blank") 
+          img(src="#{ base }/shock-doctrine.jpg" style="width:30%; float: left; margin-top: 0.5rem; margin-right: 1rem; margin-bottom: 2rem;")
+          | The Shock Doctrine: The Rise of Disaster Capitalism
+        p Naomi Klein, Knopf Canada
+        date 2007
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg
+      blockquote 
+        p: em #[label(for="toggleFootnotes") “How the fuck do so many zoomers not know how to torrent things?”]
+    .lyt-fn
+      != partial("../../_partials/pub/note", { type:"tweet", link:"https://twitter.com/Ex_AnarchoAnon/status/1261725527691464704",  title:" @Ex_AnarchoAnon", source:"User @Ex_AnarchoAnon", platform:"Twitter", date:"16 May 2020" })
+        
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg
+      p The neoliberal technology order seemed secure in its dominance. The 2016 US elections and Brexit vote changed all that; ugly, internationally visible clusters of ever-escalating patterns of barbaric behaviour perpetuated and enabled by incumbent power. Cambridge Analytica and its clientele were #[label(for="toggleFootnotes") far from the first to manipulate the social graph in the name of electioneering], but these campaigns and their surrounding turmoil triggered a collapse in end users’ trust of centralised platforms. In the years leading up to the election, centralised platforms had been strained by surveillance, manipulated by money, and littered with repeated failures to address abuse. In response, the peer-to-peer communities that had been quietly designing alternatives for years awoke charged and energised; a new wave of interest in decentralisation was emerging.
+    .lyt-fn
+      != partial("../../_partials/pub/note", { type:"site", link:"https://www.technologyreview.com/2012/12/19/114510/how-obamas-team-used-big-data-to-rally-voters/",  title:"How Obama’s Team Used Big Data to Rally Voters", source:"Sasha Issenberg", platform:"MIT Technology Review", date:"19 December 2012" })
+
+      != partial("../../_partials/pub/note", { type:"paper", link:"https://www.tandfonline.com/doi/abs/10.1080/10584609.2011.568042",  title:"Do Online Election Campaigns Win Votes? The 2007 Australian “YouTube” Election", source:"Rachel K. Gibson & Ian McAllister", platform:"Political Communication", date:"29 April 2011" })
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg
+      p Who are these peer-to-peer communities? They are developers, designers and early adopters. Their politics are diverse, yet there are areas of consensus. They rally around the values of self expression, alternative data governance, censorship resistance and interoperability. Their communities organise, debate and signal politics through their respective networks, #[label(for="toggleFootnotes") encoding protest in encryption], or #[label(for="toggleFootnotes") framing servers as facillitators of self-expression]. Common to all of these individuals and communities is a belief in the protocol as a political device. Simone Riobutti describes this as the ‘Hackerist perspective’, an #[label(for="toggleFootnotes") #[em “attempt to alter technology for political reasons by repurposing technological artifacts without concerning oneself with altering the process that produced said technology.”]] Here, the unaltered process is the process of protocol design by makers who are ignorant to both lessons of the Copyright War and the emerging threats facing their own societies. 
+    .lyt-fn
+      != partial("../../_partials/pub/note", { type:"site", link:"https://en.bitcoin.it/wiki/Genesis_block",  title:"While executing the Bitcoin network’s first transaction, Satoshi Nakomoto embedded additional text into the block: “The Times 03/Jan/2009 Chancellor on brink of second bailout for banks,” and this is widely interpreted to be ideologically motivated.", source:"The Bitcoin Wiki" })
+      
+      != partial("../../_partials/pub/note", { type:"paper", link:"https://monoskop.org/images/c/cc/Mansoux_Aymeric_Abbing_Roel_Roscam_2020_Seven_Theses_on_the_Fediverse_and_the_Becoming_of_FLOSS.pdf",  title:"Seven Theses on the Fediverse and the Becoming of FLOSS", source:"Aymeric Mansoux & Roel Roscam Abbing", platform:"Institute of Network Cultures", date:"February 2020" })
+
+      != partial("../../_partials/pub/note", { type:"site", link:"https://write.as/simone-robutti/work-notebooks-against-hackerism-pt",  title:"Against Hackerism", source:"Simone Riobutti", date:"29 November 2019" })
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg
+      p In 2018, the Dat Foundation #[label(for="toggleFootnotes") spoke publicly] of their desire to build a decentralised, censorship-resistant Wikipedia mirror but shortly after this announcement, the effort was abandoned. The team involved realised that, although Dat archives are encrypted, network participants are as vulnerable and easy to track as the BitTorrent targets from the Copyright War. In a followup blog post entitled, #[em ‘Do Not Ship It’], the team elaborated: #[label(for="toggleFootnotes") #[em “Reader privacy is one of the hardest (ethical) parts of a peer-to-peer system. Distributing Wikipedia over a peer-to-peer system means that any user can surveil the IP addresses of other users and, depending on how it is distributed, even identify what pages they are requesting. For us, this is an unacceptable first-order effect. The impact of this first-order surveillance problem leads us to even more concerning questions about the second- and third-order impacts of that decision.”]]
+
+    .lyt-fn
+      != partial("../../_partials/pub/note", { type:"talk", link:"https://peer-to-peer-web.com/berlin/2018-02-10",  title:"Decentralising Knowledge", source:"Mathias Buus Madsen", platform:"P2P Web Berlin", date:"10 February 2018" })
+
+      != partial("../../_partials/pub/note", { type:"site", link:"httphttps://blog.datproject.org/2017/12/10/dont-ship/",  title:"Do Not Ship It", source:"Joe Hand", platform:"Dat Foundation", date:"10 November 2017" })
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg
+      p The Dat Foundation’s caution over political use of their protocol is at odds with how the protocol is used. A year before, Dat had already been used to archive and #[label(for="toggleFootnotes") mirror climate research that had been politically censored by the incoming Trump administration]. Shortly after #[em Do Not Ship It] was published, the personal details of thousands of US Immigration and Customs Enforcement officers were scraped from LinkedIn by a protester and posted to GitHub. When Microsoft’s lawyers intervened and removed the archive, #[label(for="toggleFootnotes") it was mirrored to Dat]. In both of these instances, the protocol was used in political protests against a belligerent corporate-captured political office. That the protocol was designed without a strong investment into participant privacy directly led to two incredibly dangerous moments for network participants. 
+
+    .lyt-fn
+      != partial("../../_partials/pub/note", { type:"paper", link:"https://uc3.cdlib.org/2017/03/02/ensuring-access-to-critical-research-data/",  title:"Ensuring access to critical research data", source: "John Chodacki", platform:"University of California Curation Center", date:"02 March 2017" })
+
+      != partial("../../_partials/pub/note", { type:"site", link:"https://nymag.com/intelligencer/2018/06/linkedin-list-of-ice-employees-removed-by-medium-and-github.html",  title:"A List of ICE Employees Scraped From LinkedIn Was Removed by Medium and GitHub", source:"Brian Feldman", platform:"New York Magazine", date:"20 June 2018" })
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg
+      p Reviewing the technical documentation of the Dat protocol, researcher and privacy advocate Sarah Jamie Lewis expressed her frustration towards its designers’ claims around privacy. She tweeted: #[label(for="toggleFootnotes") #[em “[...] there is a section that reads: "There is an inherent tradeoff in peer-to-peer systems of source discovery vs. user privacy." I disagree with the statement & the impact resulting design decisions have on privacy. [...] Freenet presented solutions to this problem which provided strong guarantees for reader anonymity and publisher anonymity nearly 2 decades ago.”]] Decentralisation advocates roleplay as antagonists for change, but they have yet to truly threaten incumbent power. Instead, the de-prioritisation of privacy by design – regardless of its justification – enables its behaviour and offers it new scope for surveillance and control. 
+
+    .lyt-fn
+      != partial("../../_partials/pub/note", { type:"paper", link:"https://www.researchgate.net/publication/2329454_Freenet_A_Distributed_Anonymous_Information_Storage_and_Retrieval_System",  title:"Freenet: A Distributed Anonymous InformationStorage and Retrieval System", source:"Ian Clarke, Oskar Sandberg, Brandon Wiley & Theodore W. Hong", platform:"Lecture Notes in Computer Science", date:"March 2001" })
+
+      != partial("../../_partials/pub/note", { type:"tweet", link:"https://twitter.com/SarahJamieLewis/status/1008111920988106753",  title:"Tweet thread by Sarah Jamie Lewis", source:"@SarahJamieLewis", platform:"Twitter", date:"17 June 2018" })
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg
+      p This is true for many of the communities that have formed around decentralised protocols. #[label(for="toggleFootnotes") On Secure Scuttlebutt, nothing can be deleted or modified, identities are linked cryptographically to individual devices, and the asynchronous nature of the platform is highly resilient – meaning that data can’t be erased]. Even the act of changing your name or following or unfollowing someone creates a permanent record. This beautifully designed decentralised network also happens to be a forensically sound surveillance tool, in which nothing can be retracted and #[label(for="toggleFootnotes") proof of authorship can be traced to specific devices]. The protocol has attracted a vibrant community that leans left-wing libertarian, engaging openly and eagerly in post-capitalist discourse and baying for serious alternatives to neoliberalism. This is a dream for network surveillance. The danger could not be more obvious.
+
+    .lyt-fn
+      != partial("../../_partials/pub/note", { type:"paper", link:"https://dl.acm.org/doi/10.1145/3357150.3357396",  title:"Secure Scuttlebutt protocol whitepaper", source:"Domonic Tarr, Erick Lavoie, Aljoscha Meyer & Christian Tschudin", platform:"ACM", date:"September 2019" })
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg
+      p The Fediverse – a network comprised of Mastodon, Pleroma and other #[label(for="toggleFootnotes") adjacent projects] – suffers from the same glaring contradiction. Similar to email nodes, servers (known as #[em Instances] within this network) are branded around common interests, political beliefs or sexualities. Users are encouraged to join the servers that resonate with them. Like Scuttlebutt, political and sexual expression is warmly encouraged; in just one example, after centralised media moved to close the accounts of sex workers to comply with new US anti-sex trafficking laws, a Mastodon Instance named #[em Switter] was created to offer space for these individuals to continue to operate safely. #[label(for="toggleFootnotes") Switter is now one of the largest Instances in the network.]
+
+    .lyt-fn
+      != partial("../../_partials/pub/note", { type:"site", link:"https://fediverse.party/",  title:"Fediverse.party", source:"The collection ActivityPub related applications" })
+        
+      != partial("../../_partials/pub/note", { type:"data", link:"https://fediverse.network/mastodon?count=users",  title:"Mastodon Instances by User Count", source:"Fediverse Network metrics", date:"15 May 2020" })
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg
+      p This collection of networks offers no end to end encryption. Anyone with administrator access to an Instance can read anything that travels through that Instance’s infrastructure – including direct messages. The level of risk correlates with the number of cross-Instance interactions between users. If users from different Instances communicate, an attacker need only compel one Instance to reveal the direct messages between all of the interacting accounts. The centralised equivalents – Twitter, Tumblr, etc – can cloak their users through governance and resources. In a peer-to-peer network without encryption, there’s no structure, no agreed-upon governance, and absolutely no protection. Compromising or compelling an Instance or its staff means that all of network traffic is laid bare to its assailant.
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg
+      p The Fediverse has also grappled with its own limitations in threat modelling, such as failing to collectively anticipate the establishment of far right and fascist political Instances – #[label(for="toggleFootnotes") deplatformed refugees from dominant social media platforms]. Can or should a federated network accept ideologies that are antithetical to its organic politics? Regardless of the answer, it is alarming that the community and its protocol leadership could both be motivated by a distrust of centralised social media, and be blindsided by a situation that was inevitable given the common ground found between ideologies that had been forced from popular platforms one way or another.
+
+    .lyt-fn
+      != partial("../../_partials/pub/note", { type:"site", link:"https://www.washingtonpost.com/opinions/2020/05/11/its-time-get-serious-about-sanctioning-global-white-supremacist-groups/",  title:"It’s time to get serious about sanctioning global white supremacist groups", source:"Daniel Glaser & Hagar Chemali", platform:"The Washington Post", date:"11 May 2020" })
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-hge
+      p From the role cryptocurrencies play in emergent dark web marketplaces, to the #[label(for="toggleFootnotes") well-funded efforts by IPFS to produce a ‘faster, safer, and more open internet,’] #[em the decentralised community seeks to antagonise a powerful status quo whilst making tradeoffs that do not acknowledge how societies directly threaten their communities.] Combined with this antagonism, the lack of investment in privacy techniques as a priority is catastrophic. Users are asked to administrate, govern and participate politically in networks they don’t fully understand. As these networks are decentralised away from concentrated power, their risk, and political and economic capital are equally decentralised. The antagonistic rhetoric of these systems mean that participants are naïve to these risks. Whether pushing for political revolution, offering sex-work online, or buying drugs with cryptocurrency, these participants are as doomed as the victims of file-sharing lawsuits before them.
+
+    .lyt-fn
+      != partial("../../_partials/pub/note", { type:"data", link:"https://www.crunchbase.com/organization/ipfs",  title:"IPFS for example raised over $257 million via the Filecoin ICO", source:"Crunchbase Profile" })
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg
+      blockquote 
+        p: em
+          label(for="toggleFootnotes") “Turn your back on weeds you’ve hoed
+            br 
+            | Silly sinful seeds you’ve sowed
+            br 
+            | Add your straw to the camel’s load
+            br 
+            | Pray like Hell when your world explode
+            br  
+            br 
+            | Little wheels spin and spin, big wheels turn around and around
+            br 
+            | Little wheels spin and spin, big wheels turn around and around”
+
+    .lyt-fn
+      .fn.ma-reg
+        video(disablePictureInPicture autoplay muted loop playsinline src='#{ base }/bsm.mp4') 
+        a(href="https://www.youtube.com/watch?v=PkDJdokmNgM" target="_blank") Little Wheel Spin and Spin
+        p Buffy Sainte-Marie
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg
+      p Despite its polished aesthetics and #[em It Just Works] mantra, we can almost see these incumbent powers beginning to buckle. Centralised platforms crave data collection and thirst for trust from the communities they seek to exploit. These platforms sell bloated, overpowered hardware that cannot be repaired, vulnerable to drops in consumer spending or spasms in the supply chain. They anxiously eye legislation to compel encryption backdoors, which will further weaken the trust they need so badly. They wobble beneath network disruptions (such as the worldwide slowdowns in March under #[label(for="toggleFootnotes") COVID-19 load surges]) that incapacitate cloud-dependent devices. They sleep with one eye open in countries where authoritarian governments compel them or their employees to operate as an informal arm of enforcement. These current trajectories point to the accelerating erosion of centralised platform power.
+
+    .lyt-fn
+      != partial("../../_partials/pub/note", { type:"site", link:"https://www.cbronline.com/news/global-internet-outages-map",  title:"New Global Internet Outages Map: “Concerning” Rise in ISP Outages", source:"Conor Reynolds", platform:"Computer Business Review", date:"23 March 2020" })
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg
+      p This global instability demands platform reform. Peer-to-peer networks theoretically offer a level of resilience, safety and community determination that may no longer be possible with these incumbent powers. The moment demands not another protocol, not another manifesto, not another social network, but a savvy understanding of the political dynamics of protocols and the nakedness of today’s networks. By embracing a reverse #[em Shock Doctrine as a Service], developing clear, historically-grounded narratives, and building sensitivity to the user’s abilities and safety, these new decentralisation reformists can succeed where others have failed. Their solution cannot mimic an existing platform, and they must resist the temptation to trust their personal ephemera to the cloud. The phone books, calendars, notepads, photo albums and secrets that communities upload are exactly the debased thrills that extrajudicial perverts hunger after. These communities, their communications, their social graphs and their movements are ripe for exploitation. The only future is one where this is reality is embraced and fought against with every possible effort.  
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg
+      p Designers must discard the tools that crush divergence and nuance, such as #[label(for="toggleFootnotes") design thinking], user personas and so-called #[label(for="toggleFootnotes") ethical design practice]. There is a rich but incomplete field of emergent work to draw from: New frameworks such as #[label(for="toggleFootnotes") #[em Socio-technical Security]], and #[label(for="toggleFootnotes") #[em Decentralization off the shelf]], exist to assist protocol designers understand and model interfaces and threats more completely and realistically. We must draw from groups that resist the #[label(for="toggleFootnotes") Californian Ideology’s definition of identity], from the 1970s civil-rights aligned student activists who #[label(for="toggleFootnotes") fought against digitised student records], to today’s #[label(for="toggleFootnotes") Decolonise Design movement]. Reformists must cede space for decision-making and expertise to under-represented or assailed communities. 
+
+    .lyt-fn
+      != partial("../../_partials/pub/note", { type:"site", link:"https://medium.com/@dabuzon/design-thinking-is-a-rebrand-for-white-supremacy-b3d31aa55831",  title:"Design Thinking is a Rebrand for White Supremacy", source:"Darin Buzon", date:"2 March 2020" })
+
+      != partial("../../_partials/pub/note", { type:"talk", link:"https://www.youtube.com/watch?v=Xazea6_Noks",  title:"Design Ethics? No Thanks.", source:"Cade Diehm", platform:"The New Design Congress", date:"19 March 2020" })
+
+      != partial("../../_partials/pub/note", { type:"paper", link:"https://www.usenix.org/conference/foci19/presentation/goerzen",  title:"Entanglements and Exploits: Sociotechnical Security as an Analytic Framework", source:"Matt Goerzen, ​Elizabeth Anne Watkins & Gabrielle Lim", platform:"USENIX FOCI '19", date:"13 August 2019" })
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-lrg
+      p We can no longer marvel at the novel interactions afforded by peer-to-peer technologies, nor perform political theatrics within these networks. We need to lay aside our delusions that decentralisation grants us immunity – any ground ceded to the commons will be met with amplified resistance from those who already own these spaces. When this happens, every single arrogant tradeoff, every decision made in ignorance that assumes a stable march towards progress without regression will be called to account. Without cohesive organisation, mobilisation to harden security and privacy and without a sincere commitment from protocol designers to revise their collective assumptions, the push back from incumbent power will leverage each and every socio-technical flaw in each and every network. The fallout and trauma for increasingly digitalised communities will unquestionably dwarf the 2000s Copyright War. If there is no collective worldview reset, the peer-to-peer movement will remain a historical novelty, a technological bauble and thought experiment for detached technologists unable to understand the political gravity of their tools, and whose life work will never withstand the attacks against it. 
+
+    .lyt-fn
+      != partial("../../_partials/pub/note", { type:"site", link:"https://decentpatterns.xyz/",  title:"Decentralisation off the shelf", source:"Eileen Wagner & Karissa McKelvey", platform:"Simply Secure", date:"2020" })
+ 
+      != partial("../../_partials/pub/note", { type:"site", link:"https://www.metamute.org/editorial/articles/californian-ideology",  title:"The Californian Ideology", source:"Richard Barbrook & Andy Cameron", platform:"Mute", date:"1 September 1995" })
+
+      != partial("../../_partials/pub/note", { type:"paper", link:"https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1542-734X.1992.1504_43.x",  title:"“Do Not Fold, Spindle or Mutilate”: A Cultural History of the Punch Card", source:"Steven Lubar", platform:"Journal of American Culture", date:"Winter 1992" })
+
+      != partial("../../_partials/pub/note", { type:"site", link:"http://ojs.decolonising.digital/index.php/decolonising_digital/issue/view/DecolonisingTheDigital",  title:"Decolonising the Digital: Technology as Cultural Practice", source:"Josh Harle, Angie Abdilla & Andrew Newman,", platform:"Tactical Space Lab", date:"15 October 2018" })
+
+      .fn.ma-reg
+        a(href="https://www.ruhabenjamin.com/race-after-technology" target="_blank") 
+          img(src="#{ base }/race-after-technology.jpg" style="width:30%; float: left; margin-top: 0.5rem; margin-right: 1rem; margin-bottom: 2rem;")
+          | Race After Technology: Abolitionist Tools for the New Jim Code
+        p Ruha Benjamin, Polity
+        date 17 June 2019
+
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg
+      p #[a(href="https://twitter.com/helveticade" target="_blank") Cade Diehm]
+      p Summer 2020
+  .lyt-row
+    .lyt-txt.mcw-reg.ma-reg  
+      p Edited by Edward Anthony. 
+      p Thanks to Molly Wilson, Eileen Wagner, Rose Regina Lawrence, Roel Roscam Abbing, Karissa McKelvey, Georgia Bullen, Ruth Catlow, Andrew Thompson and others.
+      
+  label(for="toggleFootnotes").ui-close Close Footnotes
+  label(for="toggleFootnotes").ui-open Open Footnotes
