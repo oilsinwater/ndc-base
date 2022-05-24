@@ -1,240 +1,27 @@
 {
   "cables": {
-    "NDCAB0001": {
+    "AB0001": {
       "title": "Understanding Subtlety in Complexity and Chaos",
       "published": "14 March 2020",
       "link": "https://ndc.substack.com/p/the-new-design-cables-understanding",
       "type": "cable"
-    },
-    "NDCAB0002": {
-      "title": "Welcome to the Artificial Wilderness",
-      "published": "22 March 2020",
-      "link": "https://ndc.substack.com/p/the-new-design-cables-welcome-to",
-      "type": "cable"
-    },
-    "NDCAB0003": {
-      "title": "For God's Sake, Wear a Mask",
-      "published": "2 April 2020",
-      "link": "https://ndc.substack.com/p/the-new-design-cables-for-gods-sake",
-      "type": "cable"
-    },
-    "NDCAB0004": {
-      "title": "The Incurious, Monolinguist and Lonely Human",
-      "published": "27 May 2020",
-      "link": "https://ndc.substack.com/p/the-new-design-cables-the-incurious",
-      "type": "cable"
-    },
-    "NDCAB0005": {
-      "title": "No Face, No Case",
-      "published": "21 June 2020",
-      "link": "https://ndc.substack.com/p/no-face-no-case",
-      "type": "cable"
-    },
-    "NDCAB0006": {
-      "title": "Wolves at the Door",
-      "published": "20 July 2020",
-      "link": "https://ndc.substack.com/p/wolves-at-the-door",
-      "type": "cable"
-    },
-    "NDCAB0007": {
-      "title": "Society as User",
-      "published": "1 August 2020",
-      "link": "https://ndc.substack.com/p/society-as-user",
-      "type": "cable",
-      "description": "A stark report on the effects of technology beyond the ideal user, and the hidden essential roles of smartphones in rapidly changing societies."
-    },
-    "NDCAB0008": {
-      "title": "392 Days",
-      "published": "27 January 2021",
-      "link": "https://ndc.substack.com/p/392-days",
-      "type": "cable",
-      "description": "Recapping our first year."
-    },
-    "NDCAB0009": {
-      "title": "Finding the Future in Unexpected Places",
-      "published": "24 March 2021",
-      "link": "https://ndc.substack.com/p/finding-the-future-in-unexpected",
-      "type": "cable",
-      "description": "We must look beyond the hype of tech unicorns for global recovery, and uncover local economic systems that can rebuild and sustain communities."
-    },
-    "NDCAB0010": {
-      "title": "Help Us Research Resilient Alternatives to Digital Identity",
-      "published": "7 May 2021",
-      "link": "https://ndc.substack.com/p/help-us-research-resilient-alternatives",
-      "type": "cable",
-      "description": "Since Winter 2020, we’ve been researching new first principles of digital identity that are designed to withstand and respond to a more uncertain world. In partnership with the amazing folks at Ink & Switch, we’re prototyping some of this work."
-    },
-    "NDCAB0011": {
-      "title": "The Para-Real: Finding the Future in Unexpected Places",
-      "published": "18 May 2021",
-      "link": "https://ndc.substack.com/p/the-para-real-livestream-series",
-      "type": "cable",
-      "description": "A livestream series based on new research by The New Design Congress."
-    },
-    "NDCAB0012": {
-      "title": "Building Out Fairer Art Economies",
-      "published": "26 May 2021",
-      "link": "https://ndc.substack.com/p/building-out-fairer-art-economies",
-      "type": "cable",
-      "description": "What if the inspiration for fairer creative economies are found beyond speculative technologies?"
-    },
-    "NDCAB00013": {
-      "title": "\"Be part of the Interspecies Revolution!\" - Announcing the Treaty of Finsbury Park 2025",
-      "published": "6 July 2021",
-      "link": "https://ndc.substack.com/p/be-part-of-the-interspecies-revolution",
-      "type": "cable",
-      "description": "A major new collaboration between The New Design Congress x Furtherfield, London."
     }
   },
   "software": {
-    "NDCAPP0001": {
-      "title": "TRK",
-      "published": "18 June 2020",
-      "link": "https://github.com/newdesigncongress/trk",
+    "APP0001": {
+      "title": "Application Name",
+      "published": "01 January 2020",
+      "link": "https://",
       "type": "software"
     }
   },
   "streams": {
-    "NDCLS0001": {
+    "LS0001": {
       "title": "NEW MODELS: SIMSOCIETY",
       "published": "23 January 2020",
       "url": "https://tv.undersco.re/videos/watch/aa073041-2012-4b06-ada1-70ecb04d771c",
       "thumb": "https://tv.undersco.re/static/thumbnails/aa073041-2012-4b06-ada1-70ecb04d771c.jpg",
       "type": "stream"
-    },
-    "NDCLS0002": {
-      "title": "IAM Internet 2020 Keynote",
-      "published": "19 March 2020",
-      "url": "https://tv.undersco.re/videos/watch/1ad49ded-ac4a-4ebb-a32f-6560435baa89",
-      "thumb": "https://tv.undersco.re/static/thumbnails/1ad49ded-ac4a-4ebb-a32f-6560435baa89.jpg",
-      "type": "stream"
-    },
-    "NDCLS0003": {
-      "title": "Organising Safely Online for Mutual Aid",
-      "published": "14 July 2020",
-      "url": "https://tv.undersco.re/videos/watch/e9590a51-2869-4bf1-99e3-1d91c74088cd",
-      "thumb": "https://tv.undersco.re/static/thumbnails/e9590a51-2869-4bf1-99e3-1d91c74088cd.jpg",
-      "type": "stream"
-    },
-    "NDCLS0004": {
-      "title": "Affect as a Service",
-      "published": "4 August 2020",
-      "link": "https://components.one/posts/affect-as-a-service",
-      "type": "stream"
-    },
-    "NDCLS0005": {
-      "title": "AXIS: A Global Feedback Exchange for Trainers, Auditors, Developers, and Designers",
-      "published": "19 August 2020",
-      "url": "https://tv.undersco.re/videos/watch/9285a647-85e7-4904-bee9-914f202fd758",
-      "thumb": "https://tv.undersco.re/static/thumbnails/9285a647-85e7-4904-bee9-914f202fd758.jpg",
-      "type": "stream"
-    },
-    "NDCLS0006": {
-      "title": "Our Networks 2020",
-      "published": "12 September 2020",
-      "link": "https://ournetworks.ca",
-      "type": "stream"
-    },
-    "NDCLS0007": {
-      "title": "The World Transformed",
-      "published": "13 September 2020",
-      "link": "https://www.theworldtransformed.org",
-      "type": "stream"
-    },
-    "NDCLS0008": {
-      "title": "Reclaim Futures",
-      "published": "20 September 2020",
-      "link": "https://www.reclaimfutures.org",
-      "type": "stream"
-    },
-    "NDCLS0009": {
-      "title": "IXDD World Interaction Design Day",
-      "published": "29 September 2020",
-      "link": "https://interactiondesignday.org",
-      "type": "stream"
-    },
-    "NDCLS0010": {
-      "title": "Prior Art: Building Economic Solidarity @ Future of The Art Market with Creative United",
-      "published": "20 October 2020",
-      "url": "https://tv.undersco.re/videos/watch/15c5604b-c07f-4e18-b3d9-88afb82c2943",
-      "thumb": "https://tv.undersco.re/static/thumbnails/15c5604b-c07f-4e18-b3d9-88afb82c2943.jpg",
-      "type": "stream"
-    },
-    "NDCLS0011": {
-      "title": "Mesh Festival: What is Design Ethics?",
-      "published": "11 November 2020",
-      "link": "https://www.meshfestival.com/program",
-      "type": "stream"
-    },
-    "NDCLS0012": {
-      "title": "Beyond Design Ethics: Cybersecurity Methods in User Experience Design @ IXDD Budapest",
-      "published": "19 November 2020",
-      "url": "https://tv.undersco.re/videos/watch/f769b6e4-d992-4a73-bac1-b05ee6116368",
-      "thumb": "https://tv.undersco.re/static/thumbnails/f769b6e4-d992-4a73-bac1-b05ee6116368.jpg",
-      "type": "stream"
-    },
-    "NDCLS0013": {
-      "title": "Dreaming in Platforms: New Horizons After Open Source at Eröffnung der Prototype Fund Demo Week",
-      "published": "22 February 2021",
-      "url": "https://youtu.be/sjydwaz67yo?t=1669",
-      "thumb": "/assets/tl/thumbs/dip.jpg", 
-      "type": "stream"
-    },
-    "NDCLS0014": {
-      "title": "NDC at Orchid's PRIV8: Privacy and the Pandemic: Solutions Against Surveillance",
-      "published": "24 March 2021",
-      "url": "https://youtu.be/jxDoZ_Z4TwE?t=3923",
-      "thumb": "/assets/tl/thumbs/priv8.jpg",
-      "type": "stream"
-    },
-    "NDCLS0015": {
-      "title": "Interdependence 43: Weaponized Design, security, vulnerability, and caution over the decentralized web with Cade Diehm (New Design Congress)",
-      "published": "11 May 2021",
-      "link": "https://interdependence.fm/episodes/weaponized-design-security-vulnerability-and-caution-over-the-decentralized-web-with-cade-diehm-new-design-congress",
-      "thumb": "https://image.simplecastcdn.com/images/e324b88f-3785-4c6c-9673-ffcd0888307a/0e19d2a6-e52c-430d-abd0-aa31a3781fb4/150x150/66498ece-1105-43e6-a58d-19ed2183df09.jpg",
-      "type": "stream"
-    },
-    "NDCLS0016": {
-      "title": "The Para-Real S01E01: \"It's Weird, Okay!? I Get It's Weird!\": Finding the Self in the Para-Real with VR Documentarian Joe Hunting",
-      "published": "23 May 2021",
-      "url": "https://tv.undersco.re/videos/watch/808da42a-7d8e-4a57-adf5-9e5177379617",
-      "thumb": "https://tv.undersco.re/lazy-static/previews/c16dfb9b-55d8-45fd-a1da-a7fab6c3fee9.jpg",
-      "type": "stream"
-    },
-    "NDCLS0017": {
-      "title": "The Para-Real S01E02: We Are Here Because of Those Who Were Not: Claiming the Para-Real with Black trans artist and archivist Danielle Braithwaite-Shirley",
-      "published": "30 May 2021",
-      "url": "https://tv.undersco.re/videos/watch/eccbfc1f-3490-4cf4-bd18-52f0163ab9c3",
-      "thumb": "https://tv.undersco.re/lazy-static/previews/128e3f9b-4829-4e9a-9dc3-1427bffe26c0.jpg",
-      "type": "stream"
-    },    
-    "NDCLS0018": {
-      "title": "Critical Futures Tech",
-      "published": "1 June 2021",
-      "link": "https://criticalfuture.tech/issue-8-june-2021-cade-diehm-2630b7b4cabd/",
-      "thumb": "https://criticalfuture.tech/_nuxt/img/vr_tunnel_cft_jun_2021.238f442.png",
-      "type": "stream"
-    },
-    "NDCLS0019": {
-      "title": "The Para-Real S01E03: The Para-Real World Fair: The Logistics of the Largest Immersive Digital Arts Market with VKet Global Team Director LilBagel",
-      "published": "13 June 2021",
-      "url": "https://tv.undersco.re/w/f061e1b5-6422-44a7-a502-c1d053fd681d",
-      "thumb": "https://tv.undersco.re/lazy-static/previews/3752f061-3dad-40f2-b82d-5de5efee2d3d.jpg",
-      "type": "stream"
-    },
-    "NDCLS0020": {
-      "title": "The Para-Real S01E04: Decentralised Networks of Care: The Para-Real as Mutual Aid with Hologram members Cassie Thornton, Shawn Chua and Lauren Klein",
-      "published": "20 June 2021",
-      "url": "https://tv.undersco.re/videos/watch/ef0a0cfe-7618-4f94-8388-aaa7c5c1e4c1",
-      "thumb": "https://tv.undersco.re/lazy-static/previews/25391ee3-531d-4b2f-b3fd-7100752c4591.jpg",
-      "type": "stream"
-    },
-    "NDCLS0021": {
-      "title": "REROUTE FM: Reimagining Digital Infrastructures",
-      "published": "12 September 2021",
-      "link": "https://www.reroute.fm/episode/reimagining-digital-infrastructure",
-      "thumb": "https://artwork.captivate.fm/39df21cb-a3c2-42d3-a782-1506989c98e0/65VQl1ZbTgS6qvAyeOafOvho400X400.png",
-      "type": "stream"
-    }    
+    }   
   }
 }

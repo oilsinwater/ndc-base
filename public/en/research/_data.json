@@ -26,37 +26,5 @@
       ]
     ],
     "thumb": "/assets/research/the-para-real/tpr.jpg"
-  },  
-  "signalbots-threat-modelling": {
-    "title": "Signalbots: Secrets Distribution and Social Graph Protection for Private Groups",
-    "description": "What does it mean to organise, cooperate and moderate online in this panopticon era? In collaboration with Simply Secure and Throneless Tech, The New Design Congress conducted a multi-month deep threat modelling assessment for an innovative approach to organisational security. Using Signal - one of the most useful and widely-adopted tools for secure communication – we worked with Throneless Tech to map a user-powered chatbot infrastructure to Signal groups. This project is a ground-up system that protects the social graphs of secure Signal groups and provides IRC-like services to all participants whilst ensuring the participating group has no confusing novel overhead. ",
-    "url": "research/signalbots-threat-modelling",
-    "clients": [
-      "simply-secure",
-      "otf",
-      "throneless-tech",
-      "reset-tech"
-    ],
-    "keywords": [
-      "privacy",
-      "consent",
-      "data",
-      "surveillance",
-      "social-graph-defence"
-    ],
-    "authors": [
-      "cade-diehm",
-      "josh-king",
-      "georgia-bullen"
-    ],
-    "type": "research",
-    "published": "01 August 2020",
-    "resources": [
-      [ 
-        "browse project source", 
-        "https://github.com/throneless-tech/hubot-signal-service" 
-      ]
-    ],
-    "thumb": "https://tv.undersco.re/static/thumbnails/bbd1de76-b698-4d5b-93aa-25629705a239.jpg"
   }
 }

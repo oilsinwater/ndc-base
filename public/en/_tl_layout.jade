@@ -7,10 +7,10 @@
 doctype html
 html(lang='#{ lang }')
   if (lang !== 'index')
-    != partial("../_partials/meta/head", { lang: lang })
+    != partial('../_partials/meta/head', { lang: lang })
 
   body.cs-reg
-    != partial("../_partials/pub/nav", { type: 'index', lang: lang })
+    != partial('../_partials/pub/nav', { type: 'index', lang: lang })
     
     main#lyt-tl.ds-grid(class="lyt-#{ loc } page-#{ slug }")
       != partial('../_partials/uiSwitch/index', { label: { l: 'highlights', r: 'timeline' }})

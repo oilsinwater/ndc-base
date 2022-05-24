@@ -5,8 +5,6 @@
 - var tl = []
 - for i in public[lang].pub._data
   - tl.push(i)
-- for i in public[lang].research._data
-  - tl.push(i)
 - for i in public[lang].timeline._data
   - for t in i
     - tl.push(t)
@@ -42,7 +40,7 @@ aside#ui-tl
       for para in strings.intro
         p #{ para }
       a(href="/#{ lang }/about") More about us…
-      p: a(href="https://ndc.substack.com" target="_blank").ext Join newsletter
+      p: a(href="https://" target="_blank").ext Join newsletter
 
   .lyt-tl
     input(type="radio" name="filter" checked=true)#filterAll
