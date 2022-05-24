@@ -1,4 +1,5 @@
 {
+  "comment1": "Languages sets variables for path for internalization",
   "languages": {
     "en": "english",
     "fr": "français",
@@ -9,45 +10,9 @@
     "new-design-congress": {
       "name": "The New Design Congress",
       "url": "https://newdesigncongress.org"
-    },
-    "components": {
-      "name": "Components",
-      "url": "https://components.one"
-    },
-    "mozilla": {
-      "name": "Mozilla Foundation",
-      "url": "https://foundation.mozilla.org"
-    },
-    "simply-secure": {
-      "name": "Simply Secure",
-      "url": "https://simplysecure.org"
-    },
-    "furtherfield": {
-      "name": "Furtherfield",
-      "url": "https://furtherfield.org"
-    },
-    "magma-collective": {},
-    "otf": {
-      "name": "Open Technology Fund",
-      "url": "https://opentech.fund"
-    },
-    "throneless-tech": {
-      "name": "Throneless",
-      "url": "https://throneless.tech"
-    },
-    "reset-tech": {
-      "name": "Reset.Tech",
-      "url": "https://reset.tech"
-    },
-    "underscore": {
-      "name": "Underscore",
-      "url": "https://undersco.re"
-    },
-    "reclaim-futures": {
-      "name": "ReclaimFutures",
-      "url": "https://reclaimfutures.org"
-    }
+    }  
   },
+  "comment2": "variables for authors",
   "people": {
     "cade-diehm": {
       "name": "Cade Diehm",
@@ -55,92 +20,6 @@
       "url": "https://shiba.computer",
       "role": "Founder",
       "bio": "Cade is the founder of The New Design Congress, an international digital infrastructure research group.  After studying design in Australia, Cade was the product lead for a CN/AUS Augmented Reality fashion startup (2013), prototyped Signal with Open Whisper Systems (2014), led design and strategy with emerging cryptocurrency technologies (2015) and was Chief Design Officer at SpiderOak, a Snowden-approved cloud storage company (2016). From 2017 to 2019, he led design and collaborated on information security research at Tactical Tech, a Berlin-based NGO that works to raise awareness of issues of data, privacy and technology in societies."
-    },
-    "ellis-jones": {
-      "name": "Ellis Jones",
-      "email": "ellis.jones@newdesigncongress.org",
-      "url": "https://reclaimfutures.org",
-      "role": "Infrastructure Research",
-      "bio": "Ellis is an interdisciplinary designer, web-developer and community organiser based in Lausanne, Switzerland. They have several years experience designing and building websites, mobile apps and design systems for clients including the Swiss government, European startups web-agencies and, more recently, community projects. Beside their web work, Ellis is also a founding co-organiser of ReclaimFutures, a technology and culture conference that took place in September 2020 and included the work of over 30 speakers and artists. Ellis is also a core coorganiser of Loose Antenna, a community run and oriented web-radio, launched in June 2020."
-    },
-    "benjamin-royer": {
-      "name": "Benjamin Royer",
-      "email": "benjamin.royer@newdesigncongress.org",
-      "url": "#",
-      "role": "Political HCI Research",
-      "bio": "Benjamin is a creative with 10 years of experience designing Big Data applications for lauded benefactors of mankind such as McKinsey, the Boston Consulting Group and BNY Melon. He spent most of his career at Signal Noise, specialising in information design and interactive data-visualisations, as Senior UX/UI Designer, Project Manager and Product Manager. He began working with the New Design Congress by first translating Cade’s essay This is Fine: Optimism & Emergency in the P2P Network in French, and collaborating on new interface paradigms. He is currently translating Adam Greenfield's book Radical Technologies, The Design of Everyday Life in French on behalf of Verso Books and Presence(s) Editions for publication in mid-2022."
-    },
-    "ignatius-gilfedder": {
-      "name": "Ignatius Gilfedder",
-      "url": "https://ignatius.design",
-      "role": "Brand Design"
-    },
-    "ngoc-trieu": {
-      "name": "Ngọc Triệu",
-      "url": "https://simplysecure.org/who-we-are/ngoc.html",
-      "role": "Print Design"
-    },
-    "eileen-wagner": {
-      "name": "Eileen Wagner",
-      "url": "https://bumble.blue/",
-      "role": "Technology Advisor"
-    },
-    "karissa-mckelvey": {
-      "name": "Rae McKelvey",
-      "url": "https://okdistribute.xyz",
-      "role": "Technology Advisor"
-    },
-    "ruth-catlow": {
-      "name": "Ruth Catlow",
-      "url": "https://furtherfield.org"
-    },
-    "rose-regina-lawrence": {
-      "name": "Rose Regina Lawrence",
-      "email": "roseregina@newdesigncongress.org",
-      "url": "https://roseregina.com",
-      "role": "Security Research, Friend of NDC",
-      "bio": "Rose Regina Lawrence is an independent security researcher. Since 2011, she has focused on issues of surveillance and digital security for activists, journalists, lawyers, and other human rights defenders. She developed and ran the Jail Support coordination hotline for Occupy Wall Street. Her experience includes supporting both independent human rights advocates and organisations, such as Mozilla, Software Freedom Law Center, and most recently, Tactical Tech, as their Digital Security Coordinator."
-    },
-    "edward-anthony": {
-      "name": "Edward Anthony",
-      "role": "Research Editor",
-      "url": "https://twitter.com/__intothinair"
-    },
-    "wei-huang": {
-      "name": "Wei Huang",
-      "role": "Type Design (Pantasia)",
-      "url": "https://www.instagram.com/w__h____/"
-    },
-    "andrew-thompson": {
-      "name": "Andrew Thompson",
-      "url": "https://components.one"
-    },
-    "claire-peters": {
-      "name": "Claire Peters",
-      "role": "Web Development",
-      "url": "https://github.com/geistling"
-    },
-    "josh-king": {
-      "name": "Josh King",
-      "role": "Technologist",
-      "url": "https://throneless.tech"
-    },
-    "jaz-hee-jeong-choi": {
-      "name": "Jaz Hee-jeong Choi",
-      "url": "https://nicemustard.com/",
-      "email": "jaz.hee-jeong.choi@rmit.edu.au",
-      "bio": "Jaz Hee-jeong Choi is director of the Care-full Design Lab and Vice-Chancellor’s Principal Research Fellow in Design, RMIT, Melbourne, Australia."
-    },
-    "georgia-bullen": {
-      "name": "Georgia Bullen",
-      "email": "georgia@simplysecure.org",
-      "url": "https://georgiabullen.com/",
-      "role": "Executive Director, Simply Secure",
-      "bio": "Georgia has been an advocate in the internet health movement through her work and passion around issues such as net neutrality, security, privacy, and equitable access to technology. Her work has focused on the intersection of human-centred design, urban space, and technology – specifically, how technology intersects with human rights, e.g access to information and the right to communicate. She has a background in human-centred design, data visualisation, urban planning and software development, and is an advocate for diversity in technology. She studied Urban Planning at Columbia University's Graduate School of Architecture, Planning and Preservation, and Psychology and Human-Computer Interaction at Carnegie Mellon."
-    },
-    "caroline-sinders": {
-      "name": "Caroline Sinders",
-      "url": "https://carolinesinders.com/"
     }
   },
   "timeline": {
@@ -153,15 +32,6 @@
           "date": { "start": "19 November 2020 18:00 (CEST)", "end": "19 November 2020 20:00 (CEST)" },
           "event": {
             "url": "https://www.facebook.com/events/1769315129892448/",
-            "embed": ""
-          }
-        },
-        {
-          "title": "MESH Conference: What is Design Ethics?", 
-          "description": "In the presence of so many unknowns, how can alternative network infrastructures support the creation of radically equitable futures? What tactics of distributed collective care allow us to offer mutual aid in this moment? How can we apply more broadly what we learn as we go about decentralizing the conference across time and place?",
-          "date": { "start": "11 November 2020 15:30 (CEST)", "end": "11 November 2020 17:00 (CEST)" },
-          "event": {
-            "url": "https://www.meshfestival.com",
             "embed": ""
           }
         }

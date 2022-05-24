@@ -14,7 +14,7 @@ block mainContent
     .ma-reg.team
       each member in team.members
         .team-member.ma-reg
-          img(src="/assets/img/team/#{ member }.png").ma-sml
+          img(src="../assets/img/team/#{ member }.png").ma-sml
           p: #[a(href="#{ people[member].url }" target="_blank").ext #{ people[member].name }]
           p.ff-sans.fs-sml.fw-hev.ma-sml #{ people[member].role }
           p #{ people[member].bio }
@@ -25,3 +25,4 @@ block mainContent
           li.collab-member.ma-sml
             span: #[a(href="#{ people[collaborator].url }" target="_blank").ext #{ people[collaborator].name }]
             span.ff-sans.fs-sml #{ people[collaborator].role }
+
