@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64">
+  <defs/>
+  <g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd">
+    <path d="M42 18h4v4h-4v-4zm-4 8v-4h4v4h-4zm-4 4v-4h4v4h-4zm0 4h-4v-4h4v4zm4 4v-4h-4v4h4zm4 4h-4v-4h4v4zm0 0v4h4v-4h-4z"/>
+    <path d="M22 18h-4v4h4v-4zm4 8v-4h-4v4h4zm4 4v-4h-4v4h4zm0 4h4v-4h-4v4zm-4 4v-4h4v4h-4zm-4 4h4v-4h-4v4zm0 0v4h-4v-4h4z"/>
+  </g>
+</svg>
