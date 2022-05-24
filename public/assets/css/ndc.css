@@ -1,9 +1,9 @@
-@import '/ndc-lyt.css';
-@import '/ndc-fx.css';
-@import '/ndc-ui.css';
-@import '/ndc-nav.css';
-@import '/ndc-tl.css';
-@import '/ndc-lyt-utl.css';
+@import './ndc-lyt.css';
+@import './ndc-fx.css';
+@import './ndc-ui.css';
+@import './ndc-nav.css';
+@import './ndc-tl.css';
+@import './ndc-lyt-utl.css';
 
 :root {
   /* Color */
