@@ -3,7 +3,7 @@
 - var slug = current.path[current.path.length - 1];
 - var people = public._data.people
 
-doctype html // Layout for all pages except index.
+doctype html // Layout for all pages except index.jade
 html(lang='#{ lang }')
   if (lang !== 'index')
     != partial("../_partials/meta/head", { lang: lang })

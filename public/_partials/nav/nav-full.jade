@@ -7,7 +7,6 @@
 - }
 
 - const essays = sort(public[lang].pub._data)
-- const research = sort(public[lang].research._data)
 - const streams = sort(public[lang].timeline._data.streams)
 
 - var labels = public[lang]._data.labels
@@ -25,31 +24,25 @@ style
     a(href="/").cs-hg1.ma-r-lrg.ma-sml.ds-i-bloc
       span.dc-case index
     a(href="/#{ lang }/about").cs-hg1.ma-r-lrg.ma-sml.ds-i-bloc
-      span.dc-case What We Do
-    a(href="/#{ lang }/team").cs-hg1.ma-r-lrg.ma-sml.ds-i-bloc
-      span.dc-case Team
-    a(href="mailto:hello@newdesigncongress.org").cs-hg1.ma-r-lrg.ma-sml.ds-i-bloc
+      span.dc-case About
+    a(href="mailto:").cs-hg1.ma-r-lrg.ma-sml.ds-i-bloc
       span.dc-case Contact
-    a(href="https://opencollective.com/newdesigncongress").cs-hg1.ma-sm.ds-i-bloc
+    a(href="").cs-hg1.ma-sm.ds-i-bloc
       span.dc-case Support Us      
   h2#menu-title-essays.content.cs-hg1.ma-reg.dc-case #{ labels.community } /
   .content.row.ma-lrg
-    a(href="https://discord.gg/Xu9D3qVana").cs-hg1.ma-r-lrg.ma-sml.ds-i-bloc
+    a(href="").cs-hg1.ma-r-lrg.ma-sml.ds-i-bloc
       span.dc-case Community Discord
-    a(href="https://cloud.undersco.re/apps/forms/tRKmKkpXNSQj5Jd2").cs-hg1.ma-r-lrg.ma-sml.ds-i-bloc
+    a(href="").cs-hg1.ma-r-lrg.ma-sml.ds-i-bloc
       span.dc-case Expertise Network      
-    a(href="https://ndc.substack.com").cs-hg1.ma-r-lrg.ma-sml.ds-i-bloc
+    a(href="").cs-hg1.ma-r-lrg.ma-sml.ds-i-bloc
       span.dc-case Newsletter
   
-  h2#menu-title-essays.content.cs-hg1.ma-reg.dc-case #{ labels.essays } /
+  h2#menu-title-essays.content.cs-hg1.ma-reg.dc-case #{ labels.essays }
   .content.row.ma-lrg
     for item in(essays)
       != partial('./link-block.jade', { item, lang })
-  h2#menu-title-research.content.cs-hg1.ma-reg.dc-case #{ labels.research } /
-  .content.row.ma-lrg
-    for item in(research)
-      != partial('./link-block.jade', { item, lang })
-  h2#menu-title-live.content.cs-hg1.ma-reg.dc-case #{ labels.streams } /
+  h2#menu-title-live.content.cs-hg1.ma-reg.dc-case #{ labels.streams }
   .content.row.ma-lrg
     for item in(streams)
       != partial('./link-block.jade', { item, lang, linksExternal: true })

@@ -1,5 +1,5 @@
 {
-  "comment1": "Languages sets variables for path for internalization",
+  "comment": "This is an object storing global variables, e.g. languages, authors/people, organisations, and the attributes of the timeline.",
   "languages": {
     "en": "english",
     "fr": "français",
@@ -7,19 +7,18 @@
     "ja": "和風"
   },
   "orgs": {
-    "new-design-congress": {
-      "name": "The New Design Congress",
-      "url": "https://newdesigncongress.org"
+    "an-organization-name": {
+      "name": "The Organization",
+      "url": "https://"
     }  
   },
-  "comment2": "variables for authors",
   "people": {
-    "cade-diehm": {
-      "name": "Cade Diehm",
-      "email": "cade@newdesigncongress.org",
-      "url": "https://shiba.computer",
-      "role": "Founder",
-      "bio": "Cade is the founder of The New Design Congress, an international digital infrastructure research group.  After studying design in Australia, Cade was the product lead for a CN/AUS Augmented Reality fashion startup (2013), prototyped Signal with Open Whisper Systems (2014), led design and strategy with emerging cryptocurrency technologies (2015) and was Chief Design Officer at SpiderOak, a Snowden-approved cloud storage company (2016). From 2017 to 2019, he led design and collaborated on information security research at Tactical Tech, a Berlin-based NGO that works to raise awareness of issues of data, privacy and technology in societies."
+    "Firstname Lastname": {
+      "name": "Firstname Lastname",
+      "email": "firstnam@org.org",
+      "url": "https://",
+      "role": "role",
+      "bio": "A summary of person's background."
     }
   },
   "timeline": {
@@ -27,11 +26,11 @@
       "live": false,
       "schedule": [
         {
-          "title": "Beyond Design Ethics: Cybersecurity Methods in User Experience Design @ IXDD Budapest", 
-          "description": "In the presence of so many unknowns, how can alternative network infrastructures support the creation of radically equitable futures? What tactics of distributed collective care allow us to offer mutual aid in this moment? How can we apply more broadly what we learn as we go about decentralizing the conference across time and place?",
+          "title": "", 
+          "description": "",
           "date": { "start": "19 November 2020 18:00 (CEST)", "end": "19 November 2020 20:00 (CEST)" },
           "event": {
-            "url": "https://www.facebook.com/events/1769315129892448/",
+            "url": "",
             "embed": ""
           }
         }

@@ -1,6 +1,6 @@
-{
+{ "comment": " This is an object storing static text for english version of the site.",
   "titles": {
-    "pub": "A New Design Congress Essay",
+    "pub": "An Essay",
     "research": "Work by The New Design Congress",
     "about": "About The New Design Congress",
     "jobs": "Open Positions at The New Design Congress",
@@ -28,27 +28,14 @@
     "contact": "contact us"
   },
   "footer": {
-    "copyright": "Original content © 2021, The New Design Congress.",
     "links": [
       [
         "index",
         "/en/"
       ],
       [
-        "what we do",
+        "About",
         "/en/about"
-      ],
-      [
-        "team",
-        "/en/team"
-      ],
-      [
-        "discord",
-        "https://discord.gg/Xu9D3qVana"
-      ],
-      [
-        "expertise network",
-        "https://cloud.undersco.re/apps/forms/tRKmKkpXNSQj5Jd2"
       ],
       [
         "privacy",
@@ -56,36 +43,20 @@
       ],
       [
         "contact",
-        "mailto:hello@newdesigncongress.org"
-      ],
-      [
-        "support our work",
-        "https://opencollective.com/newdesigncongress"
+        "mailto:"
       ]
     ]
   },
   "footer_nav": {
-    "copyright": "Original content © 2021, The New Design Congress.",
+    "copyright": "Original content © 2022, ...",
     "links": [
       [
         "index",
         "/en/"
       ],
       [
-        "what we do",
+        "About",
         "/en/about"
-      ],
-      [
-        "team",
-        "/en/team"
-      ],
-      [
-        "discord",
-        "https://discord.gg/Xu9D3qVana"
-      ],
-      [
-        "expertise network",
-        "https://cloud.undersco.re/apps/forms/tRKmKkpXNSQj5Jd2"
       ],
       [
         "privacy",
@@ -93,45 +64,27 @@
       ],
       [
         "contact",
-        "mailto:hello@newdesigncongress.org"
-      ],
-      [
-        "support our work",
-        "https://opencollective.com/newdesigncongress"
+        "mailto:"
       ]
     ]
   },
   "supportFooter": {
-    "title": "Support The New Design Congress",
-    "intro": "We are a small, independent research organisation that sees all digital infrastructure as expressions of power. Support more work like this.",
+    "title": "title",
+    "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis lectus nulla at volutpat diam. Nunc pulvinar sapien et ligula ullamcorper.",
     "links": [
       {
         "title": "Subscribe or make a donation",
-        "url": "https://opencollective.com/newdesigncongress"
+        "url": ""
       },
       {
         "title": "Join the Newsletter",
-        "url": "https://ndc.substack.com"
-      }
-    ]
-  },
-  "consultingFooter": {
-    "title": "Work with us",
-    "intro": "We are a small, independent research organisation that sees all digital infrastructure as expressions of power. Our research and consultancies unearth hidden social and political dynamics in digital infrastructure and products.",
-    "links": [
-      {
-        "title": "Schedule a Call",
-        "url": "mailto:hello@newdesigncongress.org"
-      },
-      {
-        "title": "Join the Newsletter",
-        "url": "https://ndc.substack.com"
+        "url": ""
       }
     ]
   },
   "strings": {
     "intro": [
-      "A research organisation that recognises all infrastructure as expressions of power, and sees interfaces and technologies as social, economic, political and ecological accelerants."
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis lectus nulla at volutpat diam. Nunc pulvinar sapien et ligula ullamcorper."
     ],
     "supportcall": "Donate or subscribe from $5 a month and get early access to our work and ongoing research.",
     "unfilter": "Nothing found. Enable a filter to explore the Index."
@@ -192,13 +145,12 @@
   "about": {
     "title": "About Us",
     "subtitle": [
-      "The New Design Congress"
+      "Organization's name"
     ],
-    "description": "A research organisation that recognises all infrastructure as expressions of power, and sees interfaces and technologies as social, economic, political and ecological accelerants.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis lectus nulla at volutpat diam. Nunc pulvinar sapien et ligula ullamcorper.",
     "keywords": [
       "meta",
-      "about",
-      "new design congress"
+      "about"
     ],
     "supporters": {
       "label": "Supporters"
@@ -216,57 +168,8 @@
     },
     "orgPartners": [
       {
-        "name": "Simply Secure",
-        "url": "https://simplysecure.org/",
-        "type": "Fiscal Sponsor",
-        "location": "USA",
-        "logo": "simplysecure"
-      },
-      {
-        "name": "Public Office",
-        "url": "https://public-office.info",
-        "type": "Research Supporter",
-        "location": "AU",
-        "logo": "po"
-      },
-      {
-        "name": "Components",
-        "url": "https://components.one/",
-        "type": "Client",
-        "location": "US",
-        "logo": "components"
-      },      
-      {
-        "name": "Aspiration Tech",
-        "url": "https://aspirationtech.org/",
-        "type": "Strategic Partner",
-        "location": "USA",
-        "logo": "aspirationtech"
-      },
-      {
-        "name": "Filantropia",
-        "url": "https://filantropia.com.au/",
-        "type": "Strategic Partner",
-        "location": "AU",
-        "logo": "filantropia"
-      },
-      {
-        "name": "Furtherfield",
-        "url": "https://furtherfield.org/",
-        "type": "Strategic Sponsor",
-        "location": "UK",
-        "logo": "furtherfield"
-      },
-      {
-        "name": "Reclaim Futures",
-        "url": "https://reclaimfutures.org/",
-        "type": "Event Partner",
-        "location": "CH",
-        "logo": "reclaimfutures"
-      },
-      {
-        "name": "Common Knowledge",
-        "url": "https://commonknowledge.coop/",
+        "name": "Partner",
+        "url": "https://",
         "type": "Strategic Partner",
         "location": "UK",
         "logo": "commonknowledge"
@@ -275,11 +178,7 @@
   },
   "index": {
     "layout": "_tl_layout",
-    "description": "A research organisation that recognises all infrastructure as expressions of power, and sees interfaces and technologies as social, economic, political and ecological accelerants."
-  },
-  "jobs": {
-    "title": "Vacancies",
-    "description": "View open positions, internships and voluntary positions at The New Design Congress."
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis lectus nulla at volutpat diam. Nunc pulvinar sapien et ligula ullamcorper."
   },
   "privacy": {
     "title": "Privacy Policy",

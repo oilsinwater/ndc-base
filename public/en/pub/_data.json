@@ -1,25 +1,13 @@
 {
-  "aesthetic-flattening": {
-    "title": "Aesthetic Flattening",
-    "description": "Defining the now obvious context-collapse of human computer interaction. Driven by underpowered consumer tech, aesthetic flattening is a lossy, compressed parsing of almost all creative or expressive output is the logical result of a computing world that failed to reach its potential, accelerated to its breaking point by the pandemic.",
-    "url": "pub/aesthetic-flattening",
+  "template": {
+    "title": "Template post",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi sit amet mauris commodo quis. Ultricies lacus sed turpis tincidunt. Tellus cras adipiscing enim eu turpis egestas pretium aenean. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique.",
+    "url": "pub/template",
     "keywords": [
-      "aesthetic flattening",
-      "crimes of design",
-      "para-real",
-      "interface",
-      "pandemic",
-      "covid-19",
-      "capitalism",
-      "mental health",
-      "neoliberalism",
-      "video conferencing",
-      "computer hardware",
-      "laptops"
+      "technology"
     ],
     "authors": [
-      "cade-diehm",
-      "jaz-hee-jeong-choi"
+      "Firstname Lastname"
     ],
     "published": "30 June 2021",
     "thumb": "../../assets/thumb/af.png",

@@ -1,20 +1,19 @@
 - var lang = current.path[0]? current.path[0] : 'en'
 -function buildPageTitle() {
-  -if(!current.path[0] || current.path[0] === 'index' || current.path[1] === 'index') return 'The New Design Congress'
+  -if(!current.path[0] || current.path[0] === 'index' || current.path[1] === 'index') return 'The Organization Name'
   -else if(current.path[1] === 'pub') return title + ' - ' + public[lang]._data.titles.pub
-  -else if (current.path[1] === 'research') return title + ' - ' + public[lang]._data.titles.research
-  -else if (current.path[1] === 'about' || current.path[1] === 'jobs' || current.path[1] === 'consulting' || current.path[1] === 'privacy' || current.path[1] === 'team') return public[lang]._data.titles[current.path[1]]
-  -else return 'The New Design Congress'
+  -else if (current.path[1] === 'about' || current.path[1] === 'privacy') return public[lang]._data.titles[current.path[1]]
+  -else return 'The Organization Name'
 -}
 -function getUrl() {
   -let theUrl = current.path.join('/')
-  -return 'https://newdesigncongress.org/' + theUrl.replace('/index', '')
+  -return 'https://sitesdomainaddress.com' + theUrl.replace('/index', '')
 -}
 head
   meta(charset='utf-8')
   title #{ buildPageTitle() } 
 
-  meta(name='author' content='The New Design Congress')
+  meta(name='author' content='The Organization Name')
   meta(name='description' content='#{ description }')
   meta(name='keywords' content='#{ keywords }')
   meta(name='robots' content='index,follow')
@@ -33,15 +32,3 @@ head
     link(rel='stylesheet' href='../../assets/css/ndc.latin.css')
   if (lang === 'ja')
     link(rel='stylesheet' href='../../assets/css/ndc.ja.css')
-
-  script(type='text/javascript').
-    var _paq = window._paq = window._paq || [];
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-      var u="//data.undersco.re/";
-      _paq.push(['setTrackerUrl', u+'matomo.php']);
-      _paq.push(['setSiteId', '1']);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-    })();

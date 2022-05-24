@@ -1,15 +1,15 @@
-{
+{ "comment": "This is an object storing entries for the timeline in the side-panel, with the exception of essays in pub.",
   "cables": {
     "AB0001": {
-      "title": "Understanding Subtlety in Complexity and Chaos",
+      "title": "Example of cables entry",
       "published": "14 March 2020",
-      "link": "https://ndc.substack.com/p/the-new-design-cables-understanding",
+      "link": "https://",
       "type": "cable"
     }
   },
   "software": {
     "APP0001": {
-      "title": "Application Name",
+      "title": "Example of software entry",
       "published": "01 January 2020",
       "link": "https://",
       "type": "software"
@@ -17,10 +17,10 @@
   },
   "streams": {
     "LS0001": {
-      "title": "NEW MODELS: SIMSOCIETY",
+      "title": "Example of stream entry",
       "published": "23 January 2020",
-      "url": "https://tv.undersco.re/videos/watch/aa073041-2012-4b06-ada1-70ecb04d771c",
-      "thumb": "https://tv.undersco.re/static/thumbnails/aa073041-2012-4b06-ada1-70ecb04d771c.jpg",
+      "url": "https://",
+      "thumb": "https://",
       "type": "stream"
     }   
   }
