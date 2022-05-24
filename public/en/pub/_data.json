@@ -1,8 +1,8 @@
 {
-  "template": {
-    "title": "Template post",
+  "example": {
+    "title": "Example report",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi sit amet mauris commodo quis. Ultricies lacus sed turpis tincidunt. Tellus cras adipiscing enim eu turpis egestas pretium aenean. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique.",
-    "url": "pub/template",
+    "url": "pub/example",
     "keywords": [
       "technology"
     ],
@@ -10,7 +10,7 @@
       "Firstname Lastname"
     ],
     "published": "30 June 2021",
-    "thumb": "../../assets/thumb/af.png",
+    "thumb": "../../assets/thumb/placeholder.png",
     "books": [
       {
         "pdf": ""

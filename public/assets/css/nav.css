@@ -1,0 +1,240 @@
+#ui-pub {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 44px;
+  z-index: 100;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: 1px solid var(--co-text);
+  background: var(--co-high);
+}
+
+#ui-pub #ui-pub-utils svg,
+#ui-pub #ui-pub-elsewhere svg,
+#menuSwitch ~ label svg {
+  width: 32px;
+  height: 32px;
+}
+
+#ui-pub-utils {
+  flex-shrink: 0;
+  border-bottom: 1px solid var(--co-text);
+  border-top: 1px solid var(--co-text);
+}
+
+#ui-pub .menu {
+  margin-top: 6px;
+  padding: 6px;
+}
+
+#ui-pub .menu svg {
+  margin-top: 6px;
+  width: 32px;
+  height: 114px;
+}
+
+#ui-pub-utils ul li,
+#ui-pub-elsewhere ul li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: max-content;
+  right: 0;
+}
+
+#ui-pub-utils ul li > .ui-item,
+#ui-pub-elsewhere ul li > .ui-item {
+  background: var(--co-high);
+  color: var(--co-text);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+  padding: 6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+#ui-pub-utils ul li > .ui-item-special,
+#ui-pub-elsewhere ul li > .ui-item {
+  color: var(--co-pri);
+}
+
+#ui-pub-utils ul li .ui-item a,
+#ui-pub-elsewhere ul li .ui-item a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+#ui-pub-utils ul li:hover,
+#ui-pub-elsewhere ul li:hover {
+  color: var(--co-high);
+  width: auto;
+  text-align: right;
+}
+
+#ui-pub-utils ul li .actions,
+#ui-pub-elsewhere ul li .actions {
+  margin-left: 6px;
+  display: none;
+}
+
+#ui-pub-utils ul li:hover .ui-item,
+#ui-pub-elsewhere ul li:hover .ui-item {
+  background: var(--co-pri);
+  color: var(--co-high);
+}
+
+#ui-pub-utils ul li:hover .actions,
+#ui-pub-elsewhere ul li:hover .actions {
+  display: inline;
+  width: max-content;
+}
+
+#ui-pub-nav {
+  flex: 1;
+  width: max-content;
+}
+
+#ui-pub-nav ul {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - (4 * 44px) - 128px);
+}
+
+#ui-pub-nav ul li {
+  flex: 1 1 auto;
+  min-height: 0px;
+  padding-top: 4px;
+}
+
+#ui-pub-nav ul li {
+  position: relative;
+  padding: 4px 1px;
+  display: flex;
+  flex-basis: 100%;
+}
+
+#ui-pub-nav ul li .label {
+  color: var(--co-text);
+  background: var(--co-high);
+  min-height: 0px;
+  overflow: hidden;
+  font: var(--cs-tny);
+  width: 40px;
+  display: block;
+  line-height: 1.1;
+  writing-mode: tb-rl;
+}
+
+#ui-pub-nav ul li:hover .essay {
+  display: block;
+}
+
+#ui-pub-nav .essay {
+  margin-left: 6px;
+  display: none;
+  position: absolute;
+  width: 300px;
+  min-height: 100%;
+  height: auto;
+  z-index: 20;
+  left: -260px;
+  bottom: 0;
+  padding: 12px;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+#ui-pub-nav .essay .title {
+  font-family: var(--ff-seri);
+  font-size: var(--fs-reg);
+  /* letter-spacing: -1px; */
+}
+
+#ui-pub-nav .essay .authors {
+  font-family: var(--ff-sans);
+  font-size: var(--fs-sml);
+}
+
+#ui-pub-nav .essay .date {
+  font: var(--cs-tny);
+}
+
+#ui-pub-elsewhere {
+  border-top: 1px solid var(--co-text);
+  flex-shrink: 0;
+  min-height: 44px;
+  bottom: 0;
+  position: absolute;
+  width: 43px;
+}
+
+.menu-full {
+  display: none;
+  background-color: var(--co-high);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  min-width: 44px;
+}
+
+.menu-full .ndc-logo svg {
+  padding: calc(0.75 * var(--pd-lrg)) calc(0.5 * var(--pd-lrg));
+}
+
+#menuSwitch[type='checkbox'] {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  right: 0;
+  visibility: hidden;
+}
+
+#menuSwitch ~ label {
+  z-index: 3;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  width: 44px;
+  color: var(--co-text);
+  background: var(--co-high);
+}
+
+#menuSwitch ~ label:hover {
+  color: var(--co-high);
+  background: var(--co-pri);
+}
+
+#menuSwitch ~ label .x {
+  display: none;
+}
+
+#menuSwitch[type='checkbox']:checked ~ label {
+  height: 42px;
+  border-left: 1px solid var(--co-text);
+}
+
+#menuSwitch[type='checkbox']:checked ~ label .x {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 43px;
+  border-bottom: 1px solid var(--co-text);
+}
+
+#menuSwitch[type='checkbox']:checked ~ label .menu {
+  display: none;
+}
+
+#menuSwitch[type='checkbox']:checked ~ .menu-full {
+  display: block;
+}
