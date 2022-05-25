@@ -1,8 +1,0 @@
-{
-  "name": "ndc-base",
-  "version": "1.0.0",
-  "description": "A Harp App on Heroku",
-  "dependencies": {
-    "harp": "*"
-  }
-}
